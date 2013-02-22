@@ -1,0 +1,17 @@
+<%= form_for @fuente_bibliografica do |t| %>
+    <%= t.label :AUTOR %>
+    <%= t.text_field :AUTOR%>
+    <br/>
+    <%=  t.label :URL%>
+    <%= t.text_field :URL%>
+    <%=  t.label :LIBRO%>
+    <%= t.text_field :LIBRO %>
+    <%=  t.label :RESUMEN%>
+    <%= t.text_field :RESUMEN %>
+    <%=  t.label :ESTUDIANTES_ID%>
+    <%= t.text_field :ESTUDIANTES_ID %>
+    <%=  t.label :TESIS_ID%>
+    <%= t.text_field :TESIS_ID %>
+    <br/>
+    <%= t.submit "Crear fuente_bibliograficas bibliografica" %>
+<% end %>

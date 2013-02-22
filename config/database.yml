@@ -12,10 +12,9 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: tesislab_test
+  database: tesislab_development
   pool: 5
   username: root
-  password: agiles
   host: 127.0.0.1
   port: 3306
 
@@ -29,7 +28,6 @@ test:
   database: tesislab_test
   pool: 5
   username: root
-  password: agiles
   host: 127.0.0.1
   port: 3306
 
@@ -40,6 +38,5 @@ production:
   database: tesislab_test
   pool: 5
   username: root
-  password: agiles
   host: 127.0.0.1
   port: 3306

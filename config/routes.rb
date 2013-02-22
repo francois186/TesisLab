@@ -1,4 +1,8 @@
 TesisLab::Application.routes.draw do
+  resources :fuente_bibliograficas, :only => [:create, :new]
+  match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
+  match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

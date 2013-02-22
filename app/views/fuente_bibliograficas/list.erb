@@ -1,0 +1,19 @@
+
+<h1>Lista de fuentes bibliograficas</h1>
+
+
+<table class="hero-unit">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>ISBN</th>
+  </tr>
+
+  <% @fuentes_bibliograficas.each do |post| %>
+      <tr>
+        <td><%= post.AUTOR %></td>
+        <td><%= post.FECHA_LECTURA %></td>
+      </tr>
+  <% end %>
+</table>
+

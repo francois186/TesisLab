@@ -40,7 +40,7 @@ class General < ActiveRecord::Migration
     #-------------
     # FUENTES
     #-------------
-    create_table :fuentes_bibliograficas do |t|
+    create_table :fuente_bibliograficas do |t|
       t.string :URL
       t.string :AUTOR
       t.string :LIBRO
@@ -125,14 +125,14 @@ class General < ActiveRecord::Migration
     SQL
 
     execute <<-SQL
-      ALTER TABLE fuentes_bibliograficas
+      ALTER TABLE fuente_bibliograficas
       ADD CONSTRAINT fk_fuentes_tesis_id
       FOREIGN KEY (TESIS_ID)
       REFERENCES tesis(ID)
     SQL
 
     execute <<-SQL
-      ALTER TABLE fuentes_bibliograficas
+      ALTER TABLE fuente_bibliograficas
       ADD CONSTRAINT fk_fuentes_estudiantes_id
       FOREIGN KEY (ESTUDIANTES_ID)
       REFERENCES estudiantes(ID)
