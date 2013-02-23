@@ -28,6 +28,8 @@ namespace :db do
     end
 
     Compromiso.populate 10..20 do |comp|
+      comp.TITULO = Populator.words(1..2)
+      comp.CONTENIDO = Populator.sentences(1)
       comp.FECHA_CIERRE = 2.week.from_now.to_date
       comp.FECHA_COMPROMETIDA = 1.week.from_now.to_date
       comp.FECHA_CREACION = 1.week.ago.to_date

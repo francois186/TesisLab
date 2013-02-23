@@ -16,6 +16,8 @@ class General < ActiveRecord::Migration
     # COMPROMISOS
     #-------------
     create_table :compromisos do |t|
+      t.string :TITULO, :null => false
+      t.string :CONTENIDO, :null => false
       t.date :FECHA_CREACION, :null => false
       t.date :FECHA_COMPROMETIDA, :null => false
       t.date :FECHA_CIERRE, :null => false

@@ -1,5 +1,5 @@
 class CompromisosController < ApplicationController
   def list
-    @todos = Compromiso.all
+    @lista = Compromiso.all
   end
 end
