@@ -3,7 +3,7 @@ TesisLab::Application.routes.draw do
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
 
-  match '/compromisos/list' => 'compromisos#list'
+  match '/compromisos/listaCompromisos' => 'compromisos#list'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
