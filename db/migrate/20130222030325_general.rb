@@ -67,7 +67,7 @@ class General < ActiveRecord::Migration
     # PROFESORES
     #-------------
     create_table :profesores do |t|
-      t.integer :PRIMER_NOMBRE, :null => false
+      t.string :PRIMER_NOMBRE, :null => false
       t.string :SEGUNDO_NOMBRE
       t.string :PRIMER_APELLIDO, :null => false
       t.string :SEGUNDO_APELLIDO

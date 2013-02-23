@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(:version => 20130222030325) do
   add_index "fuente_bibliograficas", ["TESIS_ID"], :name => "fk_fuentes_tesis_id"
 
   create_table "profesores", :force => true do |t|
-    t.integer  "PRIMER_NOMBRE",    :null => false
+    t.string   "PRIMER_NOMBRE",    :null => false
     t.string   "SEGUNDO_NOMBRE"
     t.string   "PRIMER_APELLIDO",  :null => false
     t.string   "SEGUNDO_APELLIDO"
