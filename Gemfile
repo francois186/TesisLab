@@ -30,6 +30,10 @@ group :test do
   gem 'database_cleaner'
   gem 'rspec'
 end
+
+#Para la población de la base de datos
+gem 'faker'
+gem 'populator'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
