@@ -3,7 +3,7 @@ namespace :db do
   task :populate => :environment do
     require 'populator'
 
-    [Estudiante, Compromiso, Tesi, Profesore, TesisEstudiante].each(&:delete_all)
+    [  Profesore, Tesi,FuenteBibliografica, Estudiante, Compromiso,TesisEstudiante].each(&:delete_all)
 
     Profesore.populate 3 do |prof|
       prof.PRIMER_APELLIDO = Populator.words(1)
@@ -23,6 +23,7 @@ namespace :db do
       i = i+1
     end
 
+
     i = 1
     Tesi.populate 5 do |t|
       t.id = i
@@ -41,6 +42,20 @@ namespace :db do
       comp.FECHA_CREACION = 1.week.ago.to_date
       comp.ROL = ['profesor', 'estudiante']
       comp.TESIS_ID = 1..5
+    end
+
+    i=1
+    FuenteBibliografica.populate 5 do |fuente|
+      fuente.id=i
+      fuente.URL='www.'+Populator.words(1)+'.com'
+      fuente.AUTOR= Populator.words(2)
+      fuente.LIBRO= Populator.words(1..6)
+      fuente.RESUMEN= Populator. words(7..13)
+      fuente.FECHA_BIBLIOGRAFIA= rand(0..10).year.ago.to_date
+      fuente.FECHA_LECTURA= rand(0..30).week.ago.to_date
+      fuente.TESIS_ID=1..5
+      fuente.ESTUDIANTES_ID=1..5
+      i+=1
     end
 
     i = 1
