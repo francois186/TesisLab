@@ -58,7 +58,7 @@ class General < ActiveRecord::Migration
     #-------------
     # TABLA PUENTE
     #-------------
-    create_table :tesis_estudiantes, :id => false do |t|
+    create_table :tesis_estudiantes do |t|
       t.integer :TESIS_ID, :null => false
       t.integer :ESTUDIANTE_ID, :null => false
 

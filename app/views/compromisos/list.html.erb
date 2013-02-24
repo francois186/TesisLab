@@ -16,22 +16,21 @@
         }
     }
 </style>
-
-<div class="span3">
-  <div class="well sidebar-nav">
-    <ul class="nav nav-list">
-      <li class="nav-header">Compromisos</li>
-
+<div class="container">
+    <div class="row">
+      <% i = 0; %>
       <% @lista.each do |comp| %>
-        <li>
-          <tr>
-            <td><%= comp.FECHA_CREACION %></td>
-            <td><%= comp.FECHA_COMPROMETIDA %></td>
-            <td><%= comp.FECHA_CIERRE %></td>
-          </tr>
-        </li>
+          <div class="hero-unit">
+            <h2><%= comp.TITULO %></h2>
+            <p><%= comp.CONTENIDO %></p>
+            <p>
+                <p><i>Fecha de creación: </i><%= comp.FECHA_CREACION %></p>
+                <p><i>Fecha comprometida de entrega: </i><%= comp.FECHA_COMPROMETIDA %></p>
+                <p><i>Fecha de cierre: </i><%= comp.FECHA_CIERRE %></p>
+            </p>
+          </div>
+          <% i += 1 %>
       <% end %>
+    </div>
+</div>
 
-    </ul>
-  </div><!--/.well -->
-</div><!--/span-->

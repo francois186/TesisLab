@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(:version => 20130222030325) do
 
   create_table "compromisos", :force => true do |t|
+    t.string   "TITULO",             :null => false
+    t.string   "CONTENIDO",          :null => false
     t.date     "FECHA_CREACION",     :null => false
     t.date     "FECHA_COMPROMETIDA", :null => false
     t.date     "FECHA_CIERRE",       :null => false
@@ -82,7 +84,7 @@ ActiveRecord::Schema.define(:version => 20130222030325) do
 
   add_index "tesis", ["PROFESOR_ID"], :name => "fk_tesis_profesor_id"
 
-  create_table "tesis_estudiantes", :id => false, :force => true do |t|
+  create_table "tesis_estudiantes", :force => true do |t|
     t.integer  "TESIS_ID",      :null => false
     t.integer  "ESTUDIANTE_ID", :null => false
     t.datetime "created_at",    :null => false

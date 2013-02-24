@@ -1,3 +1,3 @@
 class Tesi < ActiveRecord::Base
-  attr_accessible :DESCRIPCION, :FECHA_INICIO, :ID, :NOMBRE, :PROFESOR_ID
+  attr_accessible :DESCRIPCION, :FECHA_INICIO, :id, :NOMBRE, :PROFESOR_ID
 end
