@@ -8,10 +8,9 @@ class FuenteBibliograficasController < ApplicationController
   def create
     @fuente_bibliografica = FuenteBibliografica.new(params[:fuente_bibliografica])
     if @fuente_bibliografica.save
-      redirect_to "/fuente_bibliograficas/list"
+      redirect_to '/fuente_bibliograficas/list'
     else
-      render "new"
-
+      render 'new'
     end
 
   end

@@ -20,7 +20,7 @@ namespace :db do
       est.PRIMER_NOMBRE = Populator.words(1)
       est.SEGUNDO_APELLIDO = Populator.words(1)
       est.SEGUNDO_NOMBRE = Populator.words(0..1)
-      i = i+1
+      i += 1
     end
 
 
@@ -31,20 +31,20 @@ namespace :db do
       t.FECHA_INICIO = 3.week.from_now.to_date
       t.NOMBRE = Populator.words(3..5)
       t.PROFESOR_ID = 1..3
-      i = i+1
+      i += 1
     end
 
     Compromiso.populate 10..20 do |comp|
       comp.TITULO = Populator.words(1..2)
       comp.CONTENIDO = Populator.sentences(1)
-      comp.FECHA_CIERRE = 2.week.from_now.to_date
-      comp.FECHA_COMPROMETIDA = 1.week.from_now.to_date
-      comp.FECHA_CREACION = 1.week.ago.to_date
+      comp.FECHA_CIERRE = rand(3..5).week.from_now.to_date
+      comp.FECHA_COMPROMETIDA = rand(1..3).week.from_now.to_date
+      comp.FECHA_CREACION = rand(1..5).week.ago.to_date
       comp.ROL = ['profesor', 'estudiante']
       comp.TESIS_ID = 1..5
     end
 
-    i=1
+    i = 1
     FuenteBibliografica.populate 5 do |fuente|
       fuente.id=i
       fuente.URL='www.'+Populator.words(1)+'.com'
@@ -55,7 +55,7 @@ namespace :db do
       fuente.FECHA_LECTURA= rand(0..30).week.ago.to_date
       fuente.TESIS_ID=1..5
       fuente.ESTUDIANTES_ID=1..5
-      i+=1
+      i += 1
     end
 
     i = 1

@@ -18,18 +18,19 @@
 </style>
 <div class="container">
     <div class="row">
-      <% i = 0; %>
+      <h1>Compromisos pendientes</h1>
+      <br><br>
       <% @lista.each do |comp| %>
           <div class="hero-unit">
             <h2><%= comp.TITULO %></h2>
             <p><%= comp.CONTENIDO %></p>
             <p>
+                <p><i>Estudiante: </i><%= comp.PRIMER_NOMBRE %> <%= comp.PRIMER_APELLIDO %></p>
                 <p><i>Fecha de creación: </i><%= comp.FECHA_CREACION %></p>
                 <p><i>Fecha comprometida de entrega: </i><%= comp.FECHA_COMPROMETIDA %></p>
                 <p><i>Fecha de cierre: </i><%= comp.FECHA_CIERRE %></p>
             </p>
           </div>
-          <% i += 1 %>
       <% end %>
     </div>
 </div>
