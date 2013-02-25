@@ -1,3 +1,25 @@
+<style type="text/css">
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .sidebar-nav {
+        padding: 9px 0;
+    }
+
+    @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+            float: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+</style>
+<div class="container">
+  <h1>Registro de fuentes bibliograficas</h1>
+  <br><br>
+  <div class="hero-unit">
 <%= form_for @fuente_bibliografica do |t| %>
     <%= t.label :AUTOR %>
     <%= t.text_field :AUTOR%>
@@ -8,10 +30,15 @@
     <%= t.text_field :LIBRO %>
     <%=  t.label :RESUMEN%>
     <%= t.text_field :RESUMEN %>
-    <%=  t.label :ESTUDIANTES_ID%>
-    <%= t.text_field :ESTUDIANTES_ID %>
-    <%=  t.label :TESIS_ID%>
-    <%= t.text_field :TESIS_ID %>
+    <%=  t.label :FECHA_BIBLIOGRAFIA%>
+    <%= t.date_select :FECHA_BIBLIOGRAFIA %>
+    <%=  t.label :FECHA_LECTURA%>
+    <%= t.date_select :FECHA_LECTURA%>
+    <%= t.hidden_field :ESTUDIANTES_ID,  :value => "1"  %>
+    <%= t.hidden_field :TESIS_ID,  :value => "1" %>
+
     <br/>
-    <%= t.submit "Crear fuente_bibliograficas bibliografica" %>
+    <%= t.submit "Crear fuente bibliografica" %>
+        </div>
 <% end %>
+</div>
