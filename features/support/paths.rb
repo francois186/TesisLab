@@ -19,6 +19,9 @@ module NavigationHelpers
       when /revisar_fuente/
         '/fuente_bibliograficas/list'
 
+      when /revisar_compromisos/
+        '/compromisos/list'
+
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #

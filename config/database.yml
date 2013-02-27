@@ -26,7 +26,7 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: tesislab_test
+  database: tesislab_test2
   pool: 5
   username: root
   password: root
