@@ -1,4 +1,4 @@
-<h1>Listing estudiantes</h1>
+<h1>Lista de estudiantes</h1>
 
 <table id="table-2">
   <thread>
@@ -21,9 +21,9 @@
     <td><%= estudiante.PRIMER_APELLIDO %></td>
     <td><%= estudiante.SEGUNDO_APELLIDO %></td>
     <td><%= estudiante.CODIGO %></td>
-    <td><%= link_to 'Show', estudiante %></td>
-    <td><%= link_to 'Edit', edit_estudiante_path(estudiante) %></td>
-    <td><%= link_to 'Destroy', estudiante, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', estudiante %></td>
+    <td><%= link_to 'Editar', edit_estudiante_path(estudiante) %></td>
+    <td><%= link_to 'Eliminar', estudiante, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </tbody>
@@ -31,4 +31,4 @@
 
 <br />
 
-<%= link_to 'New Estudiante', new_estudiante_path %>
+<%= link_to 'Nuevo', new_estudiante_path %>

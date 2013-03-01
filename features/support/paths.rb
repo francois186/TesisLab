@@ -22,6 +22,9 @@ module NavigationHelpers
       when /revisar_compromisos/
         '/compromisos/list'
 
+      when /listar_entregables/
+        '/entregables/list'
+
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #
