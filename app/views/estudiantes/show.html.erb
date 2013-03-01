@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Primer nombre:</b>
+  <%= @estudiante.PRIMER_NOMBRE %>  <%= @estudiante.SEGUNDO_NOMBRE %>  <%= @estudiante.PRIMER_APELLIDO %>  <%= @estudiante.SEGUNDO_APELLIDO %>
+</p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @estudiante.CODIGO %>
+</p>
+
+
+
+<% @tesises= Tesi.find_by_sql ["SELECT * FROM TESIS JOIN TESIS_ESTUDIANTES ON TESIS.ID=TESIS_ID WHERE ESTUDIANTE_ID=?", @estudiante.id]  %>
+
+<% @tesises.each do |tesis1| -%>
+
+
+    <p>
+      <b>Nombre tesis:</b> <%= tesis1.NOMBRE%>
+    </p>
+
+    <p>
+    <%= link_to "Tesis", :controller => "tesis", :action => "show", :id => tesis1.id %>
+    </p>
+<% end -%>
+
+<%= link_to 'Edit', edit_estudiante_path(@estudiante) %> |
+<%= link_to 'Back', estudiantes_path %>

@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ec78732-5556-43f7-ae34-4c4470534875" name="Default" comment="Poblada de tablas con lo relacionado con mi punto, sirviendo&#10;Me falta actualizar lo de la consulta que ya lo tengo, pero no lo he organizado">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2ec78732-5556-43f7-ae34-4c4470534875" name="Default" comment="Poblada de tablas con lo relacionado con mi punto, sirviendo&#10;Me falta actualizar lo de la consulta que ya lo tengo, pero no lo he organizado" />
     <ignored path="TesisLab.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361750371754" ignored="false" />
-    <file path="$PROJECT_DIR$/db/migrate/20130220202621_general.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361502225306" ignored="false" />
-    <file path="/temp.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361502530832" ignored="false" />
-    <file path="/database.yml" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361635134018" ignored="false" />
-    <file path="/routes.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361654126223" ignored="false" />
-    <file path="/compromisos_controller.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361717946781" ignored="false" />
-    <file path="/Gemfile" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361638614049" ignored="false" />
-    <file path="/populate.rake" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361749020576" ignored="false" />
-    <file path="/estudiante.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660386464" ignored="false" />
-    <file path="/profesor.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361641917678" ignored="false" />
-    <file path="/tesis.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361642006838" ignored="false" />
-    <file path="/20130222030325_general.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361654320809" ignored="false" />
-    <file path="/application.html.erb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361742767560" ignored="false" />
-    <file path="/listaCompromisos.erb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361659004987" ignored="false" />
-    <file path="/list.html.erb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361658726064" ignored="false" />
-    <file path="/compromiso.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361717893606" ignored="false" />
-    <file path="/entregable.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660382437" ignored="false" />
-    <file path="/fuente_bibliografica.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660390773" ignored="false" />
-    <file path="/profesore.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660395796" ignored="false" />
-    <file path="/tesi.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660400213" ignored="false" />
     <file path="/list.erb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361750194892" ignored="false" />
+    <file path="/tesi.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660400213" ignored="false" />
+    <file path="/profesore.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660395796" ignored="false" />
+    <file path="/fuente_bibliografica.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660390773" ignored="false" />
+    <file path="/entregable.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660382437" ignored="false" />
+    <file path="/compromiso.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361717893606" ignored="false" />
+    <file path="/list.html.erb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361658726064" ignored="false" />
+    <file path="/listaCompromisos.erb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361659004987" ignored="false" />
+    <file path="/application.html.erb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361742767560" ignored="false" />
+    <file path="/20130222030325_general.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361654320809" ignored="false" />
+    <file path="/tesis.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361642006838" ignored="false" />
+    <file path="/profesor.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361641917678" ignored="false" />
+    <file path="/estudiante.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361660386464" ignored="false" />
+    <file path="/populate.rake" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361749020576" ignored="false" />
+    <file path="/Gemfile" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361638614049" ignored="false" />
+    <file path="/compromisos_controller.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361717946781" ignored="false" />
+    <file path="/routes.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361654126223" ignored="false" />
+    <file path="/database.yml" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361635134018" ignored="false" />
+    <file path="/temp.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361502530832" ignored="false" />
+    <file path="$PROJECT_DIR$/db/migrate/20130220202621_general.rb" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361502225306" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ec78732-5556-43f7-ae34-4c4470534875" time="1361750371754" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,76 +46,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20130222030325_general.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130222030325_general.rb">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="31" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0">
+            <state line="42" column="12" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fuente_bibliografica.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/fuente_bibliografica.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="83" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fuente_bibliograficas_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="14" selection-start="479" selection-end="479" vertical-scroll-proportion="0.37797618">
-              <folding>
-                <marker date="1361750198288" expanded="true" signature="559:942" placeholder="..." />
-                <marker date="1361750198288" expanded="true" signature="574:585" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/compromisos/list.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="375" selection-end="937" vertical-scroll-proportion="-11.346154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="populate.rake" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/tasks/populate.rake">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="71" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tesi.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/tesi.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="50" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="35" selection-start="837" selection-end="837" vertical-scroll-proportion="-1.3846154">
+            <state line="6" column="2" selection-start="155" selection-end="155" vertical-scroll-proportion="0.27055702">
               <folding />
             </state>
           </provider>
@@ -141,16 +80,11 @@
   </component>
   <component name="GitLogSettings">
     <option name="myStructureFilterPaths" />
-    <option name="myDateState">
-      <MyDateState />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/views/compromisos/listaCompromisos.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/compromisos/info_comp.html.erb" />
         <option value="$PROJECT_DIR$/app/views/compromisos/list.html.erb" />
         <option value="$PROJECT_DIR$/app/models/entregable.rb" />
@@ -164,6 +98,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/lib/tasks/populate.rake" />
         <option value="$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -225,8 +161,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,6 +178,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TesisLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TesisLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TesisLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TesisLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TesisLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,23 +318,23 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="settings.github" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Libros/features/support/seeds.rb" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="true" />
-    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\TesisLab\app\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Rake.db:populate">
+  <component name="RunManager" selected="Rails.Development: TesisLab">
     <configuration default="false" name="routes" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="TesisLab" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -568,13 +536,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -604,6 +565,13 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -768,19 +736,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1380" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46710527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32730263" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46710527" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730263" sideWeight="0.4969651" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24279211" sideWeight="0.67269737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24658574" sideWeight="0.6611842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32730263" sideWeight="0.49468893" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33881578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33881578" sideWeight="0.49772382" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33881578" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -824,9 +792,6 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" value="Consultar fuentes bibliográficas listo, asi como población de la tabla con datos de prueba. Flatan test en cucumber" />
@@ -880,42 +845,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/compromiso.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="90" selection-start="587" selection-end="587" vertical-scroll-proportion="0.45637584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="252" selection-end="270" vertical-scroll-proportion="0.05704698">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130222030325_general.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="31" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Libros/features/support/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="90" selection-start="587" selection-end="587" vertical-scroll-proportion="0.45637584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="837" selection-end="837" vertical-scroll-proportion="-1.3846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+        <state line="21" column="35" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -927,34 +862,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/fuente_bibliografica.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="83" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/populate.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="71" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.0">
+        <state line="48" column="71" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/compromisos/list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="375" selection-end="937" vertical-scroll-proportion="-11.346154">
+        <state line="36" column="0" selection-start="375" selection-end="937" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="479" selection-end="479" vertical-scroll-proportion="0.37797618">
-          <folding>
-            <marker date="1361750198288" expanded="true" signature="559:942" placeholder="..." />
-            <marker date="1361750198288" expanded="true" signature="574:585" placeholder="..." />
-          </folding>
+        <state line="24" column="14" selection-start="437" selection-end="437" vertical-scroll-proportion="0.6205534">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="413" selection-end="413" vertical-scroll-proportion="0.4882943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/fuente_bibliografica.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="83" selection-start="130" selection-end="130" vertical-scroll-proportion="0.05685619">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130222030325_general.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="31" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.05685619">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="155" selection-end="155" vertical-scroll-proportion="0.27055702">
+          <folding />
         </state>
       </provider>
     </entry>

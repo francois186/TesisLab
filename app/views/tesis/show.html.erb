@@ -1,0 +1,45 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @tesises.NOMBRE %>
+</p>
+
+<p>
+  <b>Descripción:</b>
+  <%= @tesises.DESCRIPCION %>
+</p>
+
+  <b>Entregables</b>
+<% @entregables= Entregable.find_all_by_TESIS_ID @tesises.id %>
+<div class="CSSTableGenerator" >
+<table id="table-2">
+  <thead>
+  <tr>
+  <th>Nombre</th>
+  <th>Fecha de entrega</th>
+  <th>Visualizar</th>
+  </tr>
+  </thead>
+  <tbody>
+<% @entregables.each do |entregable1| -%>
+     <tr>
+
+
+    <td>
+       <%= entregable1.NOMBRE %>
+    </td>
+    <td>
+       <%= entregable1.FECHA_ENTREGA %>
+    </td>
+    <td>
+      <a href="<%= entregable1.URI_DOCUMENTO %>">Ver</a>
+    </td>
+     </tr>
+
+<% end -%>
+  </tbody>
+ </table>
+ </div>
