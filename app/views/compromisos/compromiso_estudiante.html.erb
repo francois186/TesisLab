@@ -1,0 +1,36 @@
+<style type="text/css">
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .sidebar-nav {
+        padding: 9px 0;
+    }
+
+    @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+            float: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+</style>
+<div class="container">
+  <div class="row">
+    <h1>Compromisos pendientes</h1>
+    <br><br>
+    <% @compromisos.each do |comp| %>
+        <div class="hero-unit">
+          <h2><%= comp.TITULO %></h2>
+          <p><%= comp.CONTENIDO %></p>
+          <p>
+          <p><i>Fecha de creación: </i><%= comp.FECHA_CREACION %></p>
+          <p><i>Fecha comprometida de entrega: </i><%= comp.FECHA_COMPROMETIDA %></p>
+          <p><i>Fecha de cierre: </i><%= comp.FECHA_CIERRE %></p>
+          </p>
+        </div>
+    <% end %>
+  </div>
+</div>
+

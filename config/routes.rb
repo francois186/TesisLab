@@ -9,8 +9,8 @@ TesisLab::Application.routes.draw do
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
 
   match '/compromisos/list' => 'compromisos#list'
+  match '/compromisos/:CODIGO/list' => 'compromisos#compromiso_estudiante'
 
-  match '/compromisos/list' => 'compromisos#list'
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'
   match '/tesis/:id' => 'tesis#show'

@@ -8,4 +8,13 @@ class Compromiso < ActiveRecord::Base
             join estudiantes on tesis_estudiantes.ESTUDIANTE_ID = estudiantes.id')
     .where('(CURDATE() < compromisos.FECHA_COMPROMETIDA) and (compromisos.ROL = "profesor")')
   end
+
+  def consultar_compromisos_estudiante(codigo)
+    Compromiso.select('compromisos.*')
+    .joins('join tesis on compromisos.TESIS_ID = tesis.id
+            join tesis_estudiantes on tesis.id = tesis_estudiantes.TESIS_ID
+            join estudiantes on tesis_estudiantes.ESTUDIANTE_ID = estudiantes.id')
+    .where('estudiantes.CODIGO = ?', codigo)
+  end
+
 end
