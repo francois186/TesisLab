@@ -1,0 +1,34 @@
+<div class="container">
+
+      <h1>Lista de reuniones</h1>
+      <br><br>
+      <table id="table-2">
+        <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Resumen</th>
+          <th>Conclusiones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @reuniones.each do |reunion1| -%>
+            <tr>
+
+
+              <td>
+                <%= reunion1.FECHA %>
+              </td>
+              <td>
+                <%= reunion1.RESUMEN %>
+              </td>
+              <td>
+                <%= reunion1.CONCLUSIONES %>
+              </td>
+            </tr>
+
+        <% end -%>
+        </tbody>
+      </table>
+
+</div>
+

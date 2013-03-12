@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  FECHA: 2013-03-11
+  RESUMEN: MyString
+  CONCLUSIONES: MyString
+
+two:
+  FECHA: 2013-03-11
+  RESUMEN: MyString
+  CONCLUSIONES: MyString

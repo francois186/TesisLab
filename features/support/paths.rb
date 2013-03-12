@@ -25,6 +25,9 @@ module NavigationHelpers
       when /listar_entregables/
         '/entregables/list'
 
+      when /revisar_reuniones/
+        '/reuniones/list'
+
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #
