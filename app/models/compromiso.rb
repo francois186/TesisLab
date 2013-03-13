@@ -6,7 +6,7 @@ class Compromiso < ActiveRecord::Base
     .joins('join tesis on compromisos.TESIS_ID = tesis.id
             join tesis_estudiantes on tesis.id = tesis_estudiantes.TESIS_ID
             join estudiantes on tesis_estudiantes.ESTUDIANTE_ID = estudiantes.id')
-    .where('(CURDATE() < compromisos.FECHA_COMPROMETIDA) and (compromisos.ROL = "profesor")')
+    .where('(CURDATE() < compromisos.FECHA_COMPROMETIDA)')
   end
 
   def consultar_compromisos_estudiante(codigo)

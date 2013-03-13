@@ -1,5 +1,6 @@
 TesisLab::Application.routes.draw do
   resources :fuente_bibliograficas, :only => [:create, :new]
+  resources :compromisos, :only => [:create, :new]
 
   resources :estudiantes  do
     resources :tesis
@@ -10,6 +11,7 @@ TesisLab::Application.routes.draw do
 
   match '/compromisos/list' => 'compromisos#list'
   match '/compromisos/:CODIGO/list' => 'compromisos#compromiso_estudiante'
+  match '/compromisos/creado' => 'compromisos#create'
 
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'

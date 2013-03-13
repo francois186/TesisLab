@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130222030325) do
+ActiveRecord::Schema.define(:version => 20130310022043) do
 
   create_table "compromisos", :force => true do |t|
     t.string   "TITULO",             :null => false
@@ -72,6 +72,17 @@ ActiveRecord::Schema.define(:version => 20130222030325) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
+
+  create_table "reuniones", :force => true do |t|
+    t.date     "FECHA",        :null => false
+    t.string   "RESUMEN"
+    t.string   "CONCLUSIONES"
+    t.integer  "TESIS_ID",     :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "reuniones", ["TESIS_ID"], :name => "fk_reunion_tesis_id"
 
   create_table "tesis", :force => true do |t|
     t.string   "NOMBRE",       :null => false
