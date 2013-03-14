@@ -1,0 +1,36 @@
+<%= form_for(@reunion) do |f| %>
+  <% if @reunion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reunion.errors.count, "error") %> no es posible salvar la reunion</h2>
+
+      <ul>
+      <% @reunion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :RESUMEN %><br />
+    <%= f.text_area :RESUMEN , :cols => "70", :rows => "10" %>
+  </div>
+  <div class="field">
+    <%= f.label :CONCLUSIONES %><br />
+    <%= f.text_area :CONCLUSIONES , :cols => "70", :rows => "10"%>
+  </div>
+  <div class="field">
+    <%= f.label :FECHA %><br />
+    <%= f.date_select :FECHA %>
+  </div>
+  <div class="field">
+    <%= f.label :TESIS_ID %><br />
+    <%= f.collection_select :TESIS_ID, Tesi.all, :id, :NOMBRE, :prompt => "Seleccione la tesis" %>
+
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit "Crear acta de reunion"%>
+  </div>
+<% end %>
