@@ -22,6 +22,9 @@ module NavigationHelpers
       when /revisar_compromisos/
         '/compromisos/list'
 
+      when /revisar_compromisos_estudiante/
+        '/compromisos/2345/list'
+
       when /listar_entregables/
         '/entregables/list'
 
