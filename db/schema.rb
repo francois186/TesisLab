@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130310022043) do
+ActiveRecord::Schema.define(:version => 20130317043640) do
+
+  create_table "archivos", :force => true do |t|
+    t.string   "PATH",         :null => false
+    t.date     "FECHA_SUBIDA", :null => false
+    t.string   "ID_TESIS",     :null => false
+    t.string   "NOMBRE",       :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "compromisos", :force => true do |t|
     t.string   "TITULO",             :null => false
