@@ -28,6 +28,12 @@ module NavigationHelpers
       when /revisar_reuniones/
         '/reuniones/list'
 
+      when /crear_acta_reunion/
+        '/reuniones/new'
+
+      when /reuniones/
+        '/reuniones'
+
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #

@@ -20,7 +20,6 @@ TesisLab::Application.routes.draw do
   match '/tesis/:id' => 'tesis#show'
   match '/reuniones/list' => 'reunione#list'
   match '/reuniones/new' => 'reunione#new'
-  match '/reuniones/creado' => 'reunione#create'
   match '/reuniones' => 'reunione#create'
 
   # The priority is based upon order of creation:

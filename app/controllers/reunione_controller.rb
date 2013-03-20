@@ -14,13 +14,21 @@ class ReunioneController < ApplicationController
 
   def create
     @reunion = Reunione.new(params[:reunione])
+    begin
     if @reunion.save
       redirect_to '/reuniones/list'
     else
       render 'new'
     end
+    rescue
+      render 'new'
+    end
 
   end
+
+
+
+
 
 
 end
