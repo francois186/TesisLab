@@ -8,6 +8,8 @@ TesisLab::Application.routes.draw do
     resources :tesis
   end
 
+  resources :archivos
+
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
 
@@ -21,6 +23,7 @@ TesisLab::Application.routes.draw do
   match '/reuniones/list' => 'reunione#list'
   match '/reuniones/new' => 'reunione#new'
   match '/reuniones' => 'reunione#create'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
