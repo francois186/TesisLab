@@ -23,6 +23,7 @@ TesisLab::Application.routes.draw do
   match '/reuniones/list' => 'reunione#list'
   match '/reuniones/new' => 'reunione#new'
   match '/reuniones' => 'reunione#create'
+  match '/login' => 'login#index'
 
 
   # The priority is based upon order of creation:
@@ -74,7 +75,7 @@ TesisLab::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'login#index'
 
   # See how all your routes lay out with "rake routes"
 
