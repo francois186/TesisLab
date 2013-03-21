@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130317043640) do
+ActiveRecord::Schema.define(:version => 20130320163233) do
 
   create_table "archivos", :force => true do |t|
     t.string   "PATH",         :null => false
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20130317043640) do
     t.integer  "CODIGO",           :null => false
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "USUARIO"
   end
 
   create_table "fuente_bibliograficas", :force => true do |t|
@@ -80,6 +81,7 @@ ActiveRecord::Schema.define(:version => 20130317043640) do
     t.string   "SEGUNDO_APELLIDO"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "USUARIO"
   end
 
   create_table "reuniones", :force => true do |t|

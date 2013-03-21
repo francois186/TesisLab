@@ -24,6 +24,8 @@ TesisLab::Application.routes.draw do
   match '/reuniones/new' => 'reunione#new'
   match '/reuniones' => 'reunione#create'
   match '/login' => 'login#index'
+  match '/login/login' => 'login#login'
+  match '/profesores' => 'profesores#index'
 
 
   # The priority is based upon order of creation:
