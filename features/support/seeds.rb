@@ -6,9 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 AfterConfiguration do
-  # Libro.create( :titulo=>"Cien Aos de Soledad", :autor=>'Gabriel Garcia Marquez' )
-  # Libro.create( :titulo=> 'Cien Problemas de Programacion Lineal', :autor=>'Guillermo Jimenez')
-  # Libro.create( :titulo=> 'El Coronel no Tiene Quien le Escriba', :autor=>'Gabriel Garcia Marquez' )
   #Profesore.create(:id=>1,:PRIMER_APELLIDO=>"apellido1", :PRIMER_NOMBRE=>"nombre1", :SEGUNDO_APELLIDO=>"apellido2", :SEGUNDO_NOMBRE=>"nombre2")
   #Estudiante.create(:CODIGO=>"1234", :id=>1, :PRIMER_APELLIDO=>"apellido1", :PRIMER_NOMBRE=>"nombre1", :SEGUNDO_APELLIDO=>"apellido2", :SEGUNDO_NOMBRE=>"nombre2")
   #Tesi.create(:DESCRIPCION=>"", :FECHA_INICIO=>Date.new(2001,2,3), :id=>1, :NOMBRE=>"tesis1", :PROFESOR_ID=>1)
