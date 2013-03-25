@@ -34,9 +34,7 @@
         <%=  t.label :FECHA_COMPROMETIDA %>
         <%= t.date_select :FECHA_COMPROMETIDA %>
 
-        <%=  t.label :FECHA_CREACION %>
-        <%= t.date_select :FECHA_CREACION %>
-
+        <%= t.hidden_field :FECHA_CREACION,  :value => Date.today %>
         <%= t.hidden_field :TESIS_ID,  :value => "1" %>
         <%= t.hidden_field :ROL,  :value => "profesor" %>
 
