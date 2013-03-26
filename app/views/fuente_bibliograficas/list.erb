@@ -28,6 +28,9 @@
         <div class="hero-unit">
 
           <p>
+          <% if !post.TEMAS_ID.nil? %>
+          <p><i>Tema: </i><%=  Tema.find(post.TEMAS_ID).NOMBRE %></p>
+          <% end %>
           <p><i>Autor: </i><%= post.AUTOR %></p>
           <p><i>Título: </i><%= post.LIBRO %></p>
           <p><i>Fecha Publicacion: </i><%= post.FECHA_BIBLIOGRAFIA %></p>
