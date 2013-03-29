@@ -16,6 +16,15 @@ module NavigationHelpers
       when /registrar_fuente/
         '/fuente_bibliograficas/new'
 
+      when /crear_tema/
+        '/temas/new'
+
+      when /tema_creado/
+        '/temas/confirm'
+
+      when /crear_compromiso/
+        '/compromisos/new'
+
       when /revisar_fuente/
         '/fuente_bibliograficas/list'
 

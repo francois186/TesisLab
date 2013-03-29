@@ -15,7 +15,7 @@ development:
   database: tesislab_test
   pool: 5
   username: root
-  password:
+  password: root
   host: 127.0.0.1
   port: 3306
 
@@ -26,10 +26,10 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: tesislab_test2
+  database: tesislab_test
   pool: 5
   username: root
-  password:
+  password: root
   host: 127.0.0.1
   port: 3306
 
@@ -40,6 +40,6 @@ production:
   database: tesislab_test
   pool: 5
   username: root
-  password:
+  password: root
   host: 127.0.0.1
   port: 3306

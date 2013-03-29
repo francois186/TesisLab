@@ -14,4 +14,8 @@ class FuenteBibliograficasController < ApplicationController
     end
 
   end
+
+  def collect_temas
+    @temas=Tema.select();
+  end
 end

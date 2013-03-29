@@ -2,13 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec78732-5556-43f7-ae34-4c4470534875" name="Default" comment="Poblada de tablas con lo relacionado con mi punto, sirviendo&#10;Falta pulir un poco más lo de la interfaz, pero por ahora está bien">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/temas_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tema.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/temas/confirm.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/temas/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/crear_compromisos.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/crear_temas.feature" />
+      <change type="DELETED" beforePath="C:\Users\Kevin\Documents\GitHub\TesisLab\db\migrate\20130310022043_reunion.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kevin\Documents\GitHub\TesisLab\db\migrate\20130317043640_create_archivos.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kevin\Documents\GitHub\TesisLab\db\migrate\20130320163119_add_usuario_to_estudiante.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kevin\Documents\GitHub\TesisLab\db\migrate\20130320163233_add_usuario_to_profesor.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/login_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/login_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tesis_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tesis_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profesores/index.html.erb" afterPath="$PROJECT_DIR$/app/views/profesores/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/estudiante.rb" afterPath="$PROJECT_DIR$/app/models/estudiante.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/fuente_bibliografica.rb" afterPath="$PROJECT_DIR$/app/models/fuente_bibliografica.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profesore.rb" afterPath="$PROJECT_DIR$/app/models/profesore.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/compromisos/new.html.erb" afterPath="$PROJECT_DIR$/app/views/compromisos/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fuente_bibliograficas/new.html.erb" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" afterPath="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/websteps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/websteps.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/paths.rb" afterPath="$PROJECT_DIR$/features/support/paths.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/seeds.rb" afterPath="$PROJECT_DIR$/features/support/seeds.rb" />
     </list>
     <ignored path="TesisLab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,12 +66,6 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DatabaseView">
-    <flatten value="false" />
-    <groupTables value="false" />
-    <sortChildren value="false" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="login_controller.rb" pinned="false" current="false" current-in-tab="false">
@@ -101,21 +116,13 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="9" selection-start="1039" selection-end="1052" vertical-scroll-proportion="0.0">
+            <state line="32" column="9" selection-start="1127" selection-end="1140" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
-  </component>
-  <component name="GeneratorOptions">
-    <option name="VCS_SHOW_CONFIRMATION" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,25 +164,6 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Ruby</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>RubyResolve</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -327,18 +315,6 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\public\images" />
-      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\app\assets\images" />
-      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\app\controllers" />
-      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\app\views\profesores" />
-      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\app\assets\stylesheets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\features" />
-    </key>
   </component>
   <component name="RunManager" selected="Rake.db:migrate">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -920,7 +896,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="9" selection-start="1039" selection-end="1052" vertical-scroll-proportion="0.0">
+        <state line="32" column="9" selection-start="1127" selection-end="1140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
