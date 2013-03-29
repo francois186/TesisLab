@@ -19,14 +19,16 @@ TesisLab::Application.routes.draw do
 
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'
-  match '/tesis/:id' => 'tesis#show'
+
   match '/reuniones/list' => 'reunione#list'
   match '/reuniones/new' => 'reunione#new'
   match '/reuniones' => 'reunione#create'
   match '/login' => 'login#index'
   match '/login/login' => 'login#login'
+  match '/login/create' => 'login#creartesis'
   match '/profesores' => 'profesores#index'
-
+  match '/tesis/create' => 'tesis#creartesis'
+  match '/tesis/:id' => 'tesis#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

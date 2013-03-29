@@ -1,58 +1,146 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-<!--Slider-in icons-->
-<script type="text/javascript">
-    $(document).ready(function() {
-        $(".username").focus(function() {
-            $(".user-icon").css("left","-48px");
-        });
-        $(".username").blur(function() {
-            $(".user-icon").css("left","0px");
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<style>
+    body { font-size: 62.5%; }
+    label, input { display:block; }
+    input.text { margin-bottom:12px; width:95%; padding: .4em; }
+    fieldset { padding:0; border:0; margin-top:25px; }
+    h1 { font-size: 1.2em; margin: .6em 0; }
+    div#users-contain { width: 350px; margin: 20px 0; }
+    div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+    div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+    .ui-dialog .ui-state-error { padding: .3em; }
+    .validateTips { border: 1px solid transparent; padding: 0.3em; }
+</style>
+<script>
+    $(function() {
+        var nombre = $( "#nombre" ),
+                descripcion = $( "#descripcion" ),
+                allFields = $( [] ).add( nombre ).add( descripcion ),
+                tips = $( ".validateTips" );
+
+        function updateTips( t ) {
+            tips
+                    .text( t )
+                    .addClass( "ui-state-highlight" );
+            setTimeout(function() {
+                tips.removeClass( "ui-state-highlight", 1500 );
+            }, 500 );
+        }
+
+        function checkLength( o, n, min, max ) {
+            if ( o.val().length > max || o.val().length < min ) {
+                o.addClass( "ui-state-error" );
+                updateTips( "Length of " + n + " must be between " +
+                        min + " and " + max + "." );
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function checkRegexp( o, regexp, n ) {
+            if ( !( regexp.test( o.val() ) ) ) {
+                o.addClass( "ui-state-error" );
+                updateTips( n );
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        $( "#dialog-form" ).dialog({
+            autoOpen: false,
+            height: 300,
+            width: 350,
+            modal: true,
+            buttons: {
+                "Crear tesis": function() {
+                    var bValid = true;
+                    allFields.removeClass( "ui-state-error" );
+
+                    bValid = bValid && checkLength( nombre, "username", 3, 16 );
+                    bValid = bValid && checkLength( descripcion, "username", 6, 80 );
+
+
+                   // bValid = bValid && checkRegexp( nombre, /^[a-z]([0-9a-z_])+$/i, "El nombre debe estar formada por a-z, 0-9, underscores, begin with a letter." );
+                    // From jquery.validate.js (by joern), contributed by Scott Gonzalez: http://projects.scottsplayground.com/email_address_validation/
+                   // bValid = bValid && checkRegexp( descripcion,/^[a-z]([0-9a-z_])+$/i, "La descripcion debe estar formada por a-z, 0-9, underscores, begin with a letter.") ;
+
+                    if ( bValid ) {
+                        $( "#users tbody" ).append( "<tr>" +
+                                "<td>" + nombre.val() + "</td>" +
+                                "<td>" + descripcion.val() + "</td>" +
+                                "</tr>" );
+
+                        $.ajax({
+                            type: 'POST',
+                            url: '/tesis/create',
+                            data: {'nombre' :nombre.val() ,
+                                'descripcion' : descripcion.val(),'user_id' : <%= session[:user_id] %>,'user_rol' :<%= session[:user_rol] %> },
+                            success: function(data){
+                                //data is whatever you RETURN from your controller.
+                                //an array, string, object...something
+                            }
+                        });
+
+
+                        $( this ).dialog( "close" );
+                    }
+                },
+                Cancel: function() {
+                    $( this ).dialog( "close" );
+                }
+            },
+            close: function() {
+                allFields.val( "" ).removeClass( "ui-state-error" );
+            }
         });
 
-        $(".password").focus(function() {
-            $(".pass-icon").css("left","-48px");
-        });
-        $(".password").blur(function() {
-            $(".pass-icon").css("left","0px");
-        });
+        $( "#create-user" )
+                .button()
+                .click(function() {
+                    $( "#dialog-form" ).dialog( "open" );
+                });
     });
 </script>
-
 </head>
 <body>
 
-<!--WRAPPER-->
-<div id="wrapper">
+<div id="dialog-form" title="Crear nueva tesis">
+  <p class="validateTips">Todos los campos son necesarios.</p>
 
-  <!--SLIDE-IN ICONS-->
-  <div class="user-icon"></div>
-  <div class="pass-icon"></div>
-  <!--END SLIDE-IN ICONS-->
-
-  <!--LOGIN FORM-->
-  <form name="login-form" class="login-form" action="/reuniones/new" method="post">
-
-    <!--HEADER-->
-    <div class="header">
-      <!--TITLE--><h1>profesores</h1><!--END TITLE-->
-      <!--DESCRIPTION--><span>Ingrese su usuario y contraseña para acceder a todos nuestros servicios.</span><!--END DESCRIPTION-->
-    </div>
-    <!--END HEADER-->
-
-    <!--CONTENT-->
-    <div class="content">
-      <!--USERNAME--><input name="username" id="username" type="text" class="input username" value="Usuario" onfocus="this.value=''" /><!--END USERNAME-->
-      <!--PASSWORD--><input name="password" type="password" class="input password" value="Contraseña" onfocus="this.value=''" /><!--END PASSWORD-->
-    </div>
-    <!--END CONTENT-->
-
-    <!--FOOTER-->
-    <div class="footer">
-      <!--LOGIN BUTTON--><input type="submit" name="submit" value="Login" class="button" /><!--END LOGIN BUTTON-->
-    </div>
-    <!--END FOOTER-->
-
+  <form>
+    <fieldset>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" class="text ui-widget-content ui-corner-all" />
+      <label for="descripcion">Descripcion</label>
+      <input type="text" name="descripcion" id="descripcion" value="" class="text ui-widget-content ui-corner-all" />
+    </fieldset>
   </form>
-  <!--END LOGIN FORM-->
-
 </div>
+
+
+<div id="users-contain" class="ui-widget">
+  <h1>Mis tesis <%= session[:user_id] %>  <%= session[:user_rol] %></h1>
+  <table id="users" class="ui-widget ui-widget-content">
+    <thead>
+    <tr class="ui-widget-header ">
+      <th>Nombre</th>
+      <th>Descripcion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @tesis= Tesi.find_all_by_PROFESOR_ID(session[:user_id]) %>
+    <% @tesis.each do |tesi| -%>
+    <tr>
+      <td><%= tesi.NOMBRE %></td>
+      <td><%= tesi.DESCRIPCION %></td>
+    </tr>
+    <% end -%>
+    </tbody>
+  </table>
+</div>
+<button id="create-user">Crear nueva tesis</button>
