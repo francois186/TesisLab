@@ -9,14 +9,16 @@ TesisLab::Application.routes.draw do
     resources :tesis
   end
 
-  resources :archivos
-  resources :temas, :only => [ :new, :create]
+  resources :archivos, :only => [:new, :create]
+  match '/archivos/confirmacion' => 'archivos#confirmacion'
+
+  resources :temas, :only => [:new, :create]
 
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
   match '/temas/confirm'=>'temas#confirm'
   match '/compromisos/list' => 'compromisos#list'
-  match '/compromisos/:CODIGO/list' => 'compromisos#compromiso_estudiante'
+  match '/compromisos/:ID/list' => 'compromisos#compromiso_estudiante'
   match '/compromisos/creado' => 'compromisos#create'
 
   match '/entregables/list' => 'entregable#list'

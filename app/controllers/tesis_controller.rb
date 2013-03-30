@@ -11,7 +11,7 @@ class TesisController < ApplicationController
 
   def creartesis
     @idprofe=params[:user_id]
-    @rol=params[:user_rol]
+    @rol=params[:user_rol ]
     @nombre=  params[:nombre]
     @descripcion=  params[:descripcion]
 

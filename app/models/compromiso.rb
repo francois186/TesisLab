@@ -14,7 +14,7 @@ class Compromiso < ActiveRecord::Base
     .joins('join tesis on compromisos.TESIS_ID = tesis.id
             join tesis_estudiantes on tesis.id = tesis_estudiantes.TESIS_ID
             join estudiantes on tesis_estudiantes.ESTUDIANTE_ID = estudiantes.id')
-    .where('estudiantes.CODIGO = ?', codigo)
+    .where('estudiantes.ID = ?', codigo)
   end
 
 end
