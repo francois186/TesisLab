@@ -130,6 +130,7 @@
     <tr class="ui-widget-header ">
       <th>Nombre</th>
       <th>Descripcion</th>
+      <th>Ir a tesis</th>
     </tr>
     </thead>
     <tbody>
@@ -138,9 +139,10 @@
     <tr>
       <td><%= tesi.NOMBRE %></td>
       <td><%= tesi.DESCRIPCION %></td>
+      <td><%= link_to "Ver tesis", :controller => "tesis", :action => "show", :id => tesi.id %></td>
     </tr>
     <% end -%>
     </tbody>
   </table>
 </div>
-<button id="create-user">Crear nueva tesis</button>
+<button id="create-user"><img border=0 src="/assets/add-tesis.png">Agregar nueva tesis</button>

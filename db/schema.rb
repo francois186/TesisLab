@@ -11,9 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-
-ActiveRecord::Schema.define(:version => 20130329152951) do
-
+ActiveRecord::Schema.define(:version => 20130320163233) do
 
   create_table "archivos", :force => true do |t|
     t.string   "PATH",         :null => false
@@ -55,9 +53,9 @@ ActiveRecord::Schema.define(:version => 20130329152951) do
     t.string   "PRIMER_APELLIDO",  :null => false
     t.string   "SEGUNDO_APELLIDO"
     t.integer  "CODIGO",           :null => false
-    t.string   "USUARIO"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "USUARIO"
   end
 
   create_table "fuente_bibliograficas", :force => true do |t|
@@ -69,13 +67,11 @@ ActiveRecord::Schema.define(:version => 20130329152951) do
     t.date     "FECHA_LECTURA"
     t.integer  "TESIS_ID",           :null => false
     t.integer  "ESTUDIANTES_ID",     :null => false
-    t.integer  "TEMAS_ID"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
 
   add_index "fuente_bibliograficas", ["ESTUDIANTES_ID"], :name => "fk_fuentes_estudiantes_id"
-  add_index "fuente_bibliograficas", ["TEMAS_ID"], :name => "fk_fuentes_temas_id"
   add_index "fuente_bibliograficas", ["TESIS_ID"], :name => "fk_fuentes_tesis_id"
 
   create_table "profesores", :force => true do |t|
@@ -83,9 +79,9 @@ ActiveRecord::Schema.define(:version => 20130329152951) do
     t.string   "SEGUNDO_NOMBRE"
     t.string   "PRIMER_APELLIDO",  :null => false
     t.string   "SEGUNDO_APELLIDO"
-    t.string   "USUARIO"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "USUARIO"
   end
 
   create_table "reuniones", :force => true do |t|
@@ -98,26 +94,6 @@ ActiveRecord::Schema.define(:version => 20130329152951) do
   end
 
   add_index "reuniones", ["TESIS_ID"], :name => "fk_reunion_tesis_id"
-
-
-  create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
-    t.text     "data"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
-  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
-
-
-  create_table "temas", :force => true do |t|
-    t.string   "NOMBRE",      :null => false
-    t.string   "DESCRIPCION", :null => false
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
 
   create_table "tesis", :force => true do |t|
     t.string   "NOMBRE",       :null => false
