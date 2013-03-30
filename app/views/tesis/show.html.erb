@@ -1,5 +1,17 @@
-
-
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script>
+    $(function() {
+        $( "#accordion" ).accordion();
+    });
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -12,34 +24,120 @@
   <%= @tesises.DESCRIPCION %>
 </p>
 
-  <b>Entregables</b>
-<% @entregables= Entregable.find_all_by_TESIS_ID @tesises.id %>
-<div class="CSSTableGenerator" >
-<table id="table-2">
-  <thead>
-  <tr>
-  <th>Nombre</th>
-  <th>Fecha de entrega</th>
-  <th>Visualizar</th>
-  </tr>
-  </thead>
-  <tbody>
-<% @entregables.each do |entregable1| -%>
-     <tr>
+<div id="accordion">
+  <h3>Entregables</h3>
+  <div>
+    <p>
 
 
-    <td>
-       <%= entregable1.NOMBRE %>
-    </td>
-    <td>
-       <%= entregable1.FECHA_ENTREGA %>
-    </td>
-    <td>
-      <a href="<%= entregable1.URI_DOCUMENTO %>"><img border=0 src="/assets/descargar.png"></a>
-    </td>
-     </tr>
 
-<% end -%>
-  </tbody>
- </table>
- </div>
+    <% @entregables= Entregable.find_all_by_TESIS_ID @tesises.id %>
+    <div class="CSSTableGenerator" >
+      <table id="table-2">
+        <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Fecha de entrega</th>
+          <th>Visualizar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @entregables.each do |entregable1| -%>
+            <tr>
+
+
+              <td>
+                <%= entregable1.NOMBRE %>
+              </td>
+              <td>
+                <%= entregable1.FECHA_ENTREGA %>
+              </td>
+              <td>
+                <a href="<%= entregable1.URI_DOCUMENTO %>"><img border=0 src="/assets/descargar.png"></a>
+              </td>
+            </tr>
+
+        <% end -%>
+        </tbody>
+      </table>
+    </div>
+
+    </p>
+  </div>
+  <h3>Compromisos</h3>
+  <div>
+    <p>
+
+      <% @compromisos= Compromiso.find_all_by_TESIS_ID @tesises.id %>
+    <div class="CSSTableGenerator" >
+      <table id="table-2">
+        <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>Contenido</th>
+          <th>Fecha compromiso</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @compromisos.each do |compr| -%>
+            <tr>
+
+
+              <td>
+                <%= compr.TITULO %>
+              </td>
+              <td>
+                <%=compr.CONTENIDO %>
+              </td>
+              <td>
+                <%=compr.FECHA_COMPROMETIDA %>
+              </td>
+            </tr>
+
+        <% end -%>
+        </tbody>
+      </table>
+    </div>
+
+    </p>
+  </div>
+  <h3>Reuniones realizadas</h3>
+  <div>
+    <p>
+
+      <% @reuniones= Reunione.find_all_by_TESIS_ID @tesises.id %>
+    <div class="CSSTableGenerator" >
+      <table id="table-2">
+        <thead>
+        <tr>
+          <th>Resumen</th>
+          <th>Conclusiones</th>
+          <th>Fecha</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @reuniones.each do |reunion| -%>
+            <tr>
+
+
+              <td>
+                <%= reunion.RESUMEN %>
+              </td>
+              <td>
+                <%=reunion.CONCLUSIONES %>
+              </td>
+              <td>
+                <%=reunion.FECHA %>
+              </td>
+            </tr>
+
+        <% end -%>
+        </tbody>
+      </table>
+    </div>
+
+    </p>
+
+  </div>
+
+</div>
