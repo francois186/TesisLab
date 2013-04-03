@@ -5,6 +5,13 @@ TesisLab::Application.routes.draw do
     resources :tesis
   end
 
+  resources :anotacions, :only => [:create, :new]
+  #resources :anotacions, :except => [:new] do
+  #  collection do
+  #    get 'new/:fuenteid', :to => "anotacions#new", :as => 'new'
+  #  end
+  #end
+
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
 
@@ -15,6 +22,9 @@ TesisLab::Application.routes.draw do
   match '/estudiantes' => 'estudiantes#index'
   match '/tesis/:id' => 'tesis#show'
   match '/reuniones/list' => 'reunione#list'
+  match '/anotacions/list' => 'anotacions#list'
+  match '/anotacions/:fuenteid' => 'anotacions#show'
+  #match '/anotacions/:fuenteid/new' => 'anotacions#new' , :as => 'new_anotacion'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
