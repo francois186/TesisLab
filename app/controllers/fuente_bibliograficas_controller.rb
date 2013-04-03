@@ -12,6 +12,14 @@ class FuenteBibliograficasController < ApplicationController
     else
       render 'new'
     end
+  end
 
+  def showanotaciones
+    @anotaciones = Anotacion.find(params[:fuenteid])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @anotaciones }
+    end
   end
 end
