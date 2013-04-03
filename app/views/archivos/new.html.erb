@@ -1,0 +1,24 @@
+<div class = "container">
+  <br><br><br><br>
+  <div class="hero-unit">
+    <%= form_tag( {:action => 'create'}, :multipart => 'true') do  %>
+
+    <div>
+      <%= label_tag 'Nombre', nil, :for => :name %>
+      <div>
+        <%= text_field_tag :name %>
+      </div>
+    </div>
+    <br>
+    <div>
+      <%= label_tag 'Seleccione el archivo', nil, :for => :path %>
+      <div>
+        <%= file_field_tag 'dataFile' %>
+      </div>
+    </div>
+    <br>
+    <%= submit_tag 'Subir Archivo', :class => 'btn btn-large btn-success'%>
+
+<% end %>
+  </div>
+</div>

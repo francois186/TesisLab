@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+
 ActiveRecord::Schema.define(:version => 20130402011142) do
 
   create_table "anotacions", :force => true do |t|
@@ -21,6 +22,16 @@ ActiveRecord::Schema.define(:version => 20130402011142) do
   end
 
   add_index "anotacions", ["fuenteid"], :name => "fk_anotacions_fuente_id"
+
+  create_table "archivos", :force => true do |t|
+    t.string   "PATH",         :null => false
+    t.date     "FECHA_SUBIDA", :null => false
+    t.string   "ID_TESIS",     :null => false
+    t.string   "NOMBRE",       :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
 
   create_table "compromisos", :force => true do |t|
     t.string   "TITULO",             :null => false
@@ -55,6 +66,7 @@ ActiveRecord::Schema.define(:version => 20130402011142) do
     t.integer  "CODIGO",           :null => false
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "USUARIO"
   end
 
   create_table "fuente_bibliograficas", :force => true do |t|
@@ -80,6 +92,7 @@ ActiveRecord::Schema.define(:version => 20130402011142) do
     t.string   "SEGUNDO_APELLIDO"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "USUARIO"
   end
 
   create_table "reuniones", :force => true do |t|
@@ -90,6 +103,10 @@ ActiveRecord::Schema.define(:version => 20130402011142) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
+
+
+  add_index "reuniones", ["TESIS_ID"], :name => "fk_reunion_tesis_id"
+
 
   create_table "tesis", :force => true do |t|
     t.string   "NOMBRE",       :null => false

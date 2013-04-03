@@ -53,6 +53,13 @@ When /^I choose "([^\"]*)"$/ do |field|
   choose(field)
 end
 
+When /^I select "([^"]*)" as the (.+) "([^"]*)" date$/ do |date, model, selector|
+  date = Date.parse(date)
+  select(date.year.to_s, :from => "#{model}[#{selector}(1i)]")
+  select(date.strftime("%B"), :from => "#{model}[#{selector}(2i)]")
+  select(date.day.to_s, :from => "#{model}[#{selector}(3i)]")
+end
+
 Then /^I should see "([^\"]*)"$/ do |text|
   page.should have_content(text)
 end
@@ -93,4 +100,12 @@ end
 
 Then /^page should have (.+) message "([^\"]*)"$/ do |type, text|
   page.has_css?("p.#{type}", :text => text, :visible => true)
+end
+
+And /^I attatch the file "([^\"]*)" into "([^\"]*)"$/ do |file, field|
+  attach_file(field, file)
+end
+
+And /^my current URL should be "([^\"]*)"$/ do |url|
+  current_path == url
 end

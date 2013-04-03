@@ -16,17 +16,41 @@ module NavigationHelpers
       when /registrar_fuente/
         '/fuente_bibliograficas/new'
 
+      when /crear_tema/
+        '/temas/new'
+
+      when /tema_creado/
+        '/temas/confirm'
+
+      when /crear_compromiso/
+        '/compromisos/new'
+
       when /revisar_fuente/
         '/fuente_bibliograficas/list'
 
       when /revisar_compromisos/
         '/compromisos/list'
 
+      when /revisar_compromisos_estudiante/
+        '/compromisos/2345/list'
+
       when /listar_entregables/
         '/entregables/list'
 
       when /revisar_reuniones/
         '/reuniones/list'
+
+      when /crear_acta_reunion/
+        '/reuniones/new'
+
+      when /reuniones/
+        '/reuniones'
+
+      when /archivos/
+        '/archivos/new'
+
+      when /archivosListo/
+        '/archivos/new'
 
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:

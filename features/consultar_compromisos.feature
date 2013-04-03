@@ -1,7 +1,7 @@
 Feature: Consult my bibliography
-  As a student
-  I want to consult my thesis bibligraphy
-  So that I can remember it and obtain it anytime i need it
+  As a teacher
+  I want to consult my commitments
+  So that I can check what a student must do
 
   Scenario Outline: Consult commitment
     Given I am on <page_name>

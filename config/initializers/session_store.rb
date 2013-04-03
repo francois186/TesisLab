@@ -5,4 +5,4 @@ TesisLab::Application.config.session_store :cookie_store, key: '_TesisLab_sessio
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# TesisLab::Application.config.session_store :active_record_store
+#TesisLab::Application.config.session_store :active_record_store

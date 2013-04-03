@@ -1,9 +1,14 @@
 TesisLab::Application.routes.draw do
   resources :fuente_bibliograficas, :only => [:create, :new]
+  resources :compromisos, :only => [:create, :new]
+  resources :reunione, :only => [:list, :new, :create]  do
 
+    resources :tesis
+  end
   resources :estudiantes  do
     resources :tesis
   end
+
 
   resources :anotacions, :only => [:create, :new]
   #resources :anotacions, :except => [:new] do
@@ -12,19 +17,38 @@ TesisLab::Application.routes.draw do
   #  end
   #end
 
+  resources :archivos, :only => [:new, :create]
+  match '/archivos/confirmacion' => 'archivos#confirmacion'
+
+  resources :temas, :only => [:new, :create]
+
+
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
-
+  match '/temas/confirm'=>'temas#confirm'
   match '/compromisos/list' => 'compromisos#list'
-  match '/compromisos/:CODIGO/list' => 'compromisos#compromiso_estudiante'
+  match '/compromisos/:ID/list' => 'compromisos#compromiso_estudiante'
+  match '/compromisos/creado' => 'compromisos#create'
 
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'
-  match '/tesis/:id' => 'tesis#show'
+
   match '/reuniones/list' => 'reunione#list'
+
   match '/anotacions/list' => 'anotacions#list'
   match '/anotacions/:fuenteid' => 'anotacions#show'
   #match '/anotacions/:fuenteid/new' => 'anotacions#new' , :as => 'new_anotacion'
+
+  match '/reuniones/new' => 'reunione#new'
+  match '/reuniones' => 'reunione#create'
+  match '/login' => 'login#index'
+  match '/login/login' => 'login#login'
+  match '/login/create' => 'login#creartesis'
+  match '/profesores' => 'profesores#index'
+  match '/tesis/create' => 'tesis#creartesis'
+  match '/tesis/:id' => 'tesis#show'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -74,7 +98,7 @@ TesisLab::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'login#index'
 
   # See how all your routes lay out with "rake routes"
 

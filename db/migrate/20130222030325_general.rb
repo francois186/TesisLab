@@ -51,6 +51,7 @@ class General < ActiveRecord::Migration
       t.date :FECHA_LECTURA
       t.integer :TESIS_ID, :null => false
       t.integer :ESTUDIANTES_ID, :null => false
+      t.integer :TEMAS_ID, :null => true
 
       t.timestamps
     end
@@ -73,6 +74,7 @@ class General < ActiveRecord::Migration
       t.string :SEGUNDO_NOMBRE
       t.string :PRIMER_APELLIDO, :null => false
       t.string :SEGUNDO_APELLIDO
+      t.string :USUARIO
 
       t.timestamps
     end
@@ -86,7 +88,40 @@ class General < ActiveRecord::Migration
       t.string :PRIMER_APELLIDO, :null => false
       t.string :SEGUNDO_APELLIDO
       t.integer :CODIGO, :null => false
+      t.string :USUARIO
 
+      t.timestamps
+    end
+
+    #-------------
+    # REUNIONES
+    #-------------
+    create_table :reuniones do |t|
+      t.date :FECHA, :null => false
+      t.string :RESUMEN
+      t.string :CONCLUSIONES
+      t.integer :TESIS_ID, :null => false
+
+      t.timestamps
+    end
+
+    #-------------
+    # ARCHIVOS
+    #-------------
+    create_table :archivos do |t|
+      t.string :PATH, :null => false
+      t.date :FECHA_SUBIDA, :null => false
+      t.string :ID_TESIS, :null => false
+      t.string :NOMBRE, :null => false
+
+      t.timestamps
+    end
+    #-------------
+    # TEMAS
+    #-------------
+    create_table :temas do |t|
+      t.string :NOMBRE, :null => false
+      t.string :DESCRIPCION, :null => false
       t.timestamps
     end
 
@@ -138,6 +173,20 @@ class General < ActiveRecord::Migration
       ADD CONSTRAINT fk_fuentes_estudiantes_id
       FOREIGN KEY (ESTUDIANTES_ID)
       REFERENCES estudiantes(ID)
+    SQL
+
+    execute <<-SQL
+      ALTER TABLE fuente_bibliograficas
+      ADD CONSTRAINT fk_fuentes_temas_id
+      FOREIGN KEY (TEMAS_ID)
+      REFERENCES temas(ID)
+    SQL
+
+    execute <<-SQL
+      ALTER TABLE reuniones
+      ADD CONSTRAINT fk_reunion_tesis_id
+      FOREIGN KEY (TESIS_ID)
+      REFERENCES tesis(ID)
     SQL
 
   end

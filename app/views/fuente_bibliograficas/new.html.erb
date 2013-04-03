@@ -34,6 +34,8 @@
     <%= t.date_select :FECHA_BIBLIOGRAFIA %>
     <%=  t.label :FECHA_LECTURA%>
     <%= t.date_select :FECHA_LECTURA%>
+    <%= t.label :TEMAS_ID,"Tema" %>
+    <%= t.select(:TEMAS_ID, Tema.all.collect {|p| [ p.NOMBRE, p.id ] }, { :include_blank => true })  %>
     <%= t.hidden_field :ESTUDIANTES_ID,  :value => "1"  %>
     <%= t.hidden_field :TESIS_ID,  :value => "1" %>
 

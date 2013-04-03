@@ -22,4 +22,8 @@ class FuenteBibliograficasController < ApplicationController
       format.json { render json: @anotaciones }
     end
   end
+
+  def collect_temas
+    @temas=Tema.select();
+  end
 end
