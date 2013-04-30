@@ -10,7 +10,7 @@ Feature: El usuario puede subir un archivo de cualquier tipo
 
   Examples:
     | page_name | nombre | arch | resultado | resumen |
-    | archivos | Cancion | C:\Users\François\Desktop\09-dire-dire-docks.mp3 | archivosListo | El archivo se subió con éxito |
-    | archivos | Imagen  | C:\Users\François\Desktop\final.bmp              | archivosListo | El archivo se subió con éxito |
-    | archivos | PDF     | C:\Users\François\Desktop\modeloTesis.pdf        | archivosListo | El archivo se subió con éxito |
-
+    | archivos | Video   | C:\Users\asistente\Desktop\Video.mp4 | archivosListo | El archivo se subió con éxito |
+    | archivos | Audio  | C:\Users\asistente\Desktop\Audio.wav  | archivosListo | El archivo se subió con éxito |
+    | archivos | Excel   | C:\Users\asistente\Desktop\Excel.xlsx| archivosListo | El archivo se subió con éxito |
+    | archivos | Imagen   | C:\Users\asistente\Desktop\Imagen.bmp| archivosListo | El archivo se subió con éxito |

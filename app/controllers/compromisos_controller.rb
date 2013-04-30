@@ -21,4 +21,17 @@ class CompromisosController < ApplicationController
 
   end
 
+  def edit
+    @compromiso = Compromiso.find params[:id]
+  end
+
+  def update
+    @compromiso = Compromiso.find params[:id]
+    if @compromiso.update_attributes params[:compromiso]
+      redirect_to '/compromisos/list'
+    else
+      render 'edit'
+    end
+  end
+
 end

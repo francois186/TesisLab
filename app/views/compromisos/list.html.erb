@@ -29,6 +29,9 @@
                 <p><i>Fecha de creación: </i><%= comp.FECHA_CREACION %></p>
                 <p><i>Fecha comprometida de entrega: </i><%= comp.FECHA_COMPROMETIDA %></p>
                 <p><i>Fecha de cierre: </i><%= comp.FECHA_CIERRE %></p>
+                <p><i>Avance: </i><%= comp.AVANCE %></p>
+                <p><i>Observaciones del Avance: </i><%= comp.OBSERVACIONES_AVANCE %></p>
+                <p><%= link_to "Registrar avance", :controller => "compromisos", :action => "edit", :id => comp.id %></p>
             </p>
           </div>
       <% end %>
