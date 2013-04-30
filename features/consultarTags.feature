@@ -16,3 +16,4 @@ Feature: Un usuario podrá buscar todo lo relacionado con un tag específico
     |nombre_pagina_consultar_tag|nombre_tag_4|nombre_de_la_pagina_de_resultados|resultado_negativo|
     |nombre_pagina_consultar_tag|nombre_tag_5|nombre_de_la_pagina_de_resultados|resultado_negativo|
     |nombre_pagina_consultar_tag|nombre_tag_6|nombre_de_la_pagina_de_resultados|resultado_negativo|
+    |nombre_pagina_consultar_tag|nombre_tag_6|nombre_de_la_pagina_de_resultados|resultado_negativo|

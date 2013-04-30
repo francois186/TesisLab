@@ -14,3 +14,4 @@ Feature: Un usuario podrá agregarle un Tag a cualquier elemento relacioando con
     |revisar_compromisos_estudiante|nombre_tag3|
     |listar_entregables            |nombre_tag4|
     |revisar_reuniones             |nombre_tag5|
+    |revisar_reuniones             |nombre_tag5|
