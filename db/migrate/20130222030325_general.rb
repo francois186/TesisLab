@@ -23,7 +23,8 @@ class General < ActiveRecord::Migration
       t.date :FECHA_CIERRE, :null => false
       t.string :ROL, :null => false
       t.integer :TESIS_ID, :null => false
-
+      t.string :AVANCE,  :null => true
+      t.string :OBSERVACIONES_AVANCE,  :null => true
       t.timestamps
     end
 

@@ -32,15 +32,17 @@ ActiveRecord::Schema.define(:version => 20130222030325) do
   end
 
   create_table "compromisos", :force => true do |t|
-    t.string   "TITULO",             :null => false
-    t.string   "CONTENIDO",          :null => false
-    t.date     "FECHA_CREACION",     :null => false
-    t.date     "FECHA_COMPROMETIDA", :null => false
-    t.date     "FECHA_CIERRE",       :null => false
-    t.string   "ROL",                :null => false
-    t.integer  "TESIS_ID",           :null => false
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.string   "TITULO",               :null => false
+    t.string   "CONTENIDO",            :null => false
+    t.date     "FECHA_CREACION",       :null => false
+    t.date     "FECHA_COMPROMETIDA",   :null => false
+    t.date     "FECHA_CIERRE",         :null => false
+    t.string   "ROL",                  :null => false
+    t.integer  "TESIS_ID",             :null => false
+    t.string   "AVANCE"
+    t.string   "OBSERVACIONES_AVANCE"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   add_index "compromisos", ["TESIS_ID"], :name => "fk_compromisos_tesis_id"

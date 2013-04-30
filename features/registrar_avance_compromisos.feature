@@ -7,16 +7,14 @@ Feature: set progress of a commitment
     Given I am on <page_name>
     When I click "Consultar Compromisos"
     Then I should be on revisar_compromisos
-    And I should see "algo"
-    And I should see "un compromiso"
-    And I should see "Estudiante: similique rem"
-    When I click "Registrar avance"
+    And I should see "Estudiante:"
+    When I click the first "Registrar avance"
     Then I should be on registrar_avance
-    And I should see "compromiso1"
+    And I should see "Titulo"
     And I fill in "Avance" with "50"
-    And I fill in "Descripcion" with "Descripcion de avance"
+    And I fill in "compromiso OBSERVACIONES AVANCE" with "Descripcion de avance"
     When I press "Registrar avance"
-    Then I should be on Avance registrado
+    Then I should be on revisar_compromisos
 
 
   Examples:

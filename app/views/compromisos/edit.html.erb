@@ -1,0 +1,52 @@
+<style type="text/css">
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .sidebar-nav {
+        padding: 9px 0;
+    }
+
+    @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+            float: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+</style>
+<div class="container">
+  <h1>Registro de compromisos</h1>
+  <br><br>
+  <div class="hero-unit">
+    <%= form_for @compromiso,url: { action: :update, id: @compromiso.id } do |t| %>
+
+        <%=  t.label :TITULO %>
+        <%= t.text_field :TITULO,:disabled => 'disabled' %>
+
+        <%=  t.label :CONTENIDO %>
+        <%= t.text_field :CONTENIDO,:disabled => 'disabled' %>
+
+        <%= t.label :FECHA_CIERRE %>
+        <%= t.text_field :FECHA_CIERRE,:disabled => 'disabled' %>
+
+        <%=  t.label :FECHA_COMPROMETIDA %>
+        <%= t.text_field :FECHA_COMPROMETIDA,:disabled => 'disabled' %>
+
+        <%=  t.label :AVANCE %>
+        <%= t.text_field :AVANCE %>
+
+        <%=  t.label :OBSERVACIONES_AVANCE %>
+        <%= t.text_field :OBSERVACIONES_AVANCE %>
+
+        <%= t.hidden_field :FECHA_CREACION,  :value => Date.today %>
+        <%= t.hidden_field :TESIS_ID,  :value => "1" %>
+        <%= t.hidden_field :ROL,  :value => "profesor" %>
+
+        <br/>
+        <%= t.submit "Registrar avance" %>
+        </div>
+
+    <% end %>
+    </div>

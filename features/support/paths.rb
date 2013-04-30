@@ -31,6 +31,10 @@ module NavigationHelpers
       when /revisar_compromisos/
         '/compromisos/list'
 
+      when /registrar_avance/
+        '/compromisos/2/edit'
+
+
       when /revisar_compromisos_estudiante/
         '/compromisos/2345/list'
 

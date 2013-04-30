@@ -1,5 +1,5 @@
 class Compromiso < ActiveRecord::Base
-  attr_accessible :FECHA_CIERRE, :FECHA_COMPROMETIDA, :FECHA_CREACION, :id, :ROL, :TESIS_ID, :TITULO, :CONTENIDO
+  attr_accessible :FECHA_CIERRE, :FECHA_COMPROMETIDA, :FECHA_CREACION, :id, :ROL, :TESIS_ID, :TITULO, :CONTENIDO , :AVANCE, :OBSERVACIONES_AVANCE
 
   def compromisos_con_estudiantes
     Compromiso.select('estudiantes.PRIMER_NOMBRE, estudiantes.PRIMER_APELLIDO, compromisos.*')
