@@ -125,6 +125,12 @@ class General < ActiveRecord::Migration
       t.timestamps
     end
 
+    create_table :anotacions do |t|
+      t.string :texto
+      t.integer :fuenteid
+      t.timestamps
+    end
+
     #Se crean las foreign keys respectivas
     execute <<-SQL
       ALTER TABLE tesis
@@ -187,6 +193,13 @@ class General < ActiveRecord::Migration
       ADD CONSTRAINT fk_reunion_tesis_id
       FOREIGN KEY (TESIS_ID)
       REFERENCES tesis(ID)
+    SQL
+
+    execute <<-SQL
+      ALTER TABLE anotacions
+      ADD CONSTRAINT fk_anotacions_fuente_id
+      FOREIGN KEY (FUENTEID)
+      REFERENCES fuente_bibliograficas(id)
     SQL
 
   end

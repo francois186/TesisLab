@@ -8,5 +8,7 @@ class BrowsingTest < ActionDispatch::PerformanceTest
 
   def test_homepage
     get '/'
+    get '/compromisos/list'
+
   end
 end
