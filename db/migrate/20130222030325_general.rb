@@ -116,6 +116,7 @@ class General < ActiveRecord::Migration
 
       t.timestamps
     end
+
     #-------------
     # TEMAS
     #-------------
@@ -125,7 +126,30 @@ class General < ActiveRecord::Migration
       t.timestamps
     end
 
+    #-------------
+    # TAGS
+    #-------------
+    create_table :tags do |t|
+      t.string :NOMBRE
+      t.string :DESCRIPCION
+
+      t.timestamps
+    end
+
+    #-------------
+    # PUENTE TAGS
+    #-------------
+    create_table :tag_puentes do |t|
+      t.integer :ID_TAG
+      t.integer :ID_TEMA
+      t.integer :ID_ARCHIVO
+      t.integer :ID_REUNION
+      t.integer :ID_FUENTE
+      t.integer :ID_COMPROMISO
+    end
+
     #Se crean las foreign keys respectivas
+
     execute <<-SQL
       ALTER TABLE tesis
         ADD CONSTRAINT fk_tesis_profesor_id
