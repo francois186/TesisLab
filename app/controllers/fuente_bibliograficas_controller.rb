@@ -2,9 +2,11 @@ class FuenteBibliograficasController < ApplicationController
   def list
     @fuentes_bibliograficas = FuenteBibliografica.all
   end
+
   def new
     @fuente_bibliografica = FuenteBibliografica.new
   end
+
   def create
     @fuente_bibliografica = FuenteBibliografica.new(params[:fuente_bibliografica])
     if @fuente_bibliografica.save
@@ -12,6 +14,21 @@ class FuenteBibliograficasController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def add
+
+  end
+
+  def added
+
+    FuenteBibliografica.find(params[:id]).update_attribute('TEMAS_ID',params[:temas_id])
+
+
+  end
+
+  def assigned
+
   end
 
   def showanotaciones
@@ -23,7 +40,9 @@ class FuenteBibliograficasController < ApplicationController
     end
   end
 
-  def collect_temas
-    @temas=Tema.select();
-  end
+  #def collect_temas
+  #  @temas=Tema.select();
+  #end
+
+
 end

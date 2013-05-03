@@ -50,7 +50,8 @@ TesisLab::Application.routes.draw do
   match '/profesores' => 'profesores#index'
   match '/tesis/create' => 'tesis#creartesis'
   match '/tesis/:id' => 'tesis#show'
-
+  match '/temas/add' => 'fuente_bibliograficas#add'
+  match '/temas/assigned' => 'fuente_bibliograficas#added'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
