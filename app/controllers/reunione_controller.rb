@@ -25,10 +25,22 @@ class ReunioneController < ApplicationController
     end
 
   end
+  def edit
+    @reunion = Reunione.find params[:id]
+  end
 
+  def update
+    @reunion = Reunione.find params[:id]
+    begin
+    if @reunion.update_attributes(params[:reunione])
+      logger.debug "pudo grabar"
+      redirect_to '/reuniones/list'
+    else
+      render 'edit'
+    end
+    end
 
-
-
+  end
 
 
 end

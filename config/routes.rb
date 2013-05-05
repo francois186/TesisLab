@@ -37,13 +37,15 @@ TesisLab::Application.routes.draw do
   match '/estudiantes' => 'estudiantes#index'
 
   match '/reuniones/list' => 'reunione#list'
-
+  match '/reuniones/:id/edit' => 'reunione#edit'
+  match '/reuniones/:id/update' => 'reunione#update'
   match '/anotacions/list' => 'anotacions#list'
   match '/anotacions/:fuenteid' => 'anotacions#show'
   #match '/anotacions/:fuenteid/new' => 'anotacions#new' , :as => 'new_anotacion'
 
   match '/reuniones/new' => 'reunione#new'
   match '/reuniones' => 'reunione#create'
+
   match '/login' => 'login#index'
   match '/login/login' => 'login#login'
   match '/login/create' => 'login#creartesis'

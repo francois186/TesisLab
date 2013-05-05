@@ -12,19 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :RESUMEN %><br />
+    <%= f.label :RESUMEN %>
     <%= f.text_area :RESUMEN , :cols => "70", :rows => "10" %>
   </div>
   <div class="field">
-    <%= f.label :CONCLUSIONES %><br />
+    <%= f.label :CONCLUSIONES %>
     <%= f.text_area :CONCLUSIONES , :cols => "70", :rows => "10"%>
   </div>
   <div class="field">
-    <%= f.label :FECHA %><br />
+    <%= f.label :FECHA %>
     <%= f.date_select :FECHA %>
   </div>
   <div class="field">
-    <%= f.label :TESIS_ID %><br />
+    <%= f.label :TESIS_ID %>
     <%= f.collection_select :TESIS_ID, Tesi.all, :id, :NOMBRE, :prompt => "Seleccione la tesis" %>
 
   </div>
