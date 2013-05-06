@@ -33,6 +33,18 @@ TesisLab::Application.routes.draw do
   match '/compromisos/:id/update' => 'compromisos#update'
 
 
+  resources :tag, :only => [:new, :create]
+  match '/tag/buscar' => 'tag#buscar'
+  match '/tag/fuentes' => 'tag#fuentes', :as => 'fuentes'
+  match '/tag/entregables' => 'tag#archivos', :as => 'archivos'
+  match '/tag/reuniones' => 'tag#reuniones', :as => 'reuniones'
+  match '/tag/temas' => 'tag#temas', :as => 'temas'
+  match '/tag/compromisos' => 'tag#compromisos', :as => 'compromisos'
+  match '/tag/confirma' => 'tag#confirma'
+  match '/tag/asignar' => 'tag#asignar'
+  match '/tag/parcial' => 'tag#parcial'
+  match '/tag/conf' => 'tag#conf'
+
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'
 

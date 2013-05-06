@@ -1,0 +1,16 @@
+<br><br><br><br>
+<div class="container">
+    <div class="hero-unit">
+      <%= form_tag ({:action => 'parcial'}) do  %>
+        <% @tags = Tag.new.dar_tags %>
+        <p>Seleccione el tag:</p>
+        <%= select_tag :tg, options_for_select(@tags.collect{ |u| [u.NOMBRE, u.NOMBRE] }) %>
+        <p>Seleccione el tipo de objeto al que desea asignarle el tag:</p>
+        <% @ary = %w(Temas Reuniones Fuentes Compromisos Entregables) %>
+
+        <%= select_tag :tipo, options_for_select(@ary) %>
+
+        <p><%= submit_tag 'Continuar', :class => 'btn btn-large btn-success' %></p>
+      <% end %>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<br><br><br><br>
+<div class="container">
+  <div class="hero-unit">
+    <h2>Asignar Tag a <%= params[:tipo] %></h2>
+    <% @eltipo = params[:tipo] %>
+    <% @eltag = params[:tg] %>
+    <%= form_tag ({:action => 'conf'}) do  %>
+        <p>Seleccione el objeto al que se le asignará el tag:</p>
+        <% @algo = Tag.new.dar_objetos(params[:tipo]) %>
+        <% if params[:c] == 'Temas' %>
+            <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.NOMBRE, u.id] }) %>
+        <% elsif params[:c] == 'Reuniones' %>
+            <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.FECHA, u.id] }) %>
+        <% elsif params[:c] == 'Fuentes' %>
+            <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.AUTOR, u.id] }) %>
+        <% elsif params[:c] == 'Compromisos' %>
+            <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.TITULO, u.id] }) %>
+        <% else %>
+            <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.NOMBRE, u.id] }) %>
+        <% end %>
+        <p><%= submit_tag 'Asignar', :class => 'btn btn-large btn-success' %></p>
+    <% end %>
+  </div>
+</div>
