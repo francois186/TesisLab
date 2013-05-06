@@ -25,6 +25,8 @@ TesisLab::Application.routes.draw do
 
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
+  match '/fuente_bibliograficas/get_all' =>'fuente_bibliograficas#get_all'
+  match '/bibliografia'=>'fuente_bibliograficas#bibliografia'
   match '/temas/confirm'=>'temas#confirm'
   match '/compromisos/list' => 'compromisos#list'
   match '/compromisos/:ID/list' => 'compromisos#compromiso_estudiante'

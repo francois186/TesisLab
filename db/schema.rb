@@ -74,6 +74,8 @@ ActiveRecord::Schema.define(:version => 20130402011142) do
     t.string   "RESUMEN"
     t.date     "FECHA_BIBLIOGRAFIA"
     t.date     "FECHA_LECTURA"
+    t.string   "UBICACION",          :null => false
+    t.string   "EDITORIAL",          :null => false
     t.integer  "TESIS_ID",           :null => false
     t.integer  "ESTUDIANTES_ID",     :null => false
     t.integer  "TEMAS_ID"
