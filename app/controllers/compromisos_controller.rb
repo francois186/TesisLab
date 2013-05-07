@@ -21,4 +21,28 @@ class CompromisosController < ApplicationController
 
   end
 
-end
+  def eventos
+
+    @lista = Compromiso.all
+    @events  = Array.new
+      Event.delete_all
+
+    @lista.each do |compro|
+
+      temp=Event.create(id:compro.id,end:compro.FECHA_COMPROMETIDA,start:compro.FECHA_COMPROMETIDA,title:compro.TITULO,url:"")
+
+        @events.append(temp)
+    end
+
+    @eventos2=Event.find(:all, :select => "id, title,start,url", :conditions => {  } )
+    respond_to do |format|
+      format.html
+      format.json{
+        render :json => @eventos2.to_json
+      }
+
+  end
+
+  end
+
+  end

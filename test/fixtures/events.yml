@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  [id: 1
+  title: MyString
+  start: 2013-05-06
+  end: 2013-05-06
+  url: 
+
+two:
+  [id: 1
+  title: MyString
+  start: 2013-05-06
+  end: 2013-05-06
+  url: 

@@ -18,6 +18,7 @@ TesisLab::Application.routes.draw do
   match '/compromisos/list' => 'compromisos#list'
   match '/compromisos/:CODIGO/list' => 'compromisos#compromiso_estudiante'
   match '/compromisos/creado' => 'compromisos#create'
+  match '/compromisos/eventos' => 'compromisos#eventos'
 
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'

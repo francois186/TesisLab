@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css" />
+<link href='/fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='/fullcalendar/fullcalendar.min.js'></script>
+
 <style>
     body { font-size: 62.5%; }
     label, input { display:block; }
@@ -104,10 +107,49 @@
                 .click(function() {
                     $( "#dialog-form" ).dialog( "open" );
                 });
+
+        $( "#create-acta" )
+                .button()
+                .click(function() {
+                    window.location.href = "/reuniones/new";
+                });
+
+        $( "#create-compromiso" )
+                .button()
+                .click(function() {
+                    window.location.href = "/compromisos/new";
+                });
     });
 </script>
+<script>
+
+    $(document).ready(function() {
+
+        $('#calendar').fullCalendar({
+
+            editable: false,
+
+            events: "/compromisos/eventos.json",
+
+            eventDrop: function(event, delta) {
+               // alert(event.title + ' was moved ' + delta + ' days\n' +
+               //         '(should probably update your database)');
+            },
+
+            loading: function(bool) {
+                if (bool) $('#loading').show();
+                else $('#loading').hide();
+            }
+
+        });
+
+
+    });
+
+</script>
+
 </head>
-<body>
+<div class="container">
 
 <div id="dialog-form" title="Crear nueva tesis">
   <p class="validateTips">Todos los campos son necesarios.</p>
@@ -123,26 +165,51 @@
 </div>
 
 
-<div id="users-contain" class="ui-widget">
-  <h1>Mis tesis <%= session[:user_id] %>  <%= session[:user_rol] %></h1>
-  <table id="users" class="ui-widget ui-widget-content">
-    <thead>
-    <tr class="ui-widget-header ">
-      <th>Nombre</th>
-      <th>Descripcion</th>
-      <th>Ir a tesis</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% @tesis= Tesi.find_all_by_PROFESOR_ID(session[:user_id]) %>
-    <% @tesis.each do |tesi| -%>
-    <tr>
-      <td><%= tesi.NOMBRE %></td>
-      <td><%= tesi.DESCRIPCION %></td>
-      <td><%= link_to "Ver tesis", :controller => "tesis", :action => "show", :id => tesi.id %></td>
-    </tr>
-    <% end -%>
-    </tbody>
-  </table>
+
+  <br>
+<br>
+<br>
+<br>
+
+<div class="easyui-layout" style="width:1000px;height:600px;">
+  <div data-options="region:'north'" style="height:50px">
+
+  </div>
+  <div data-options="region:'south',split:true" style="height:50px;"></div>
+  <div data-options="region:'east',split:true" title="Compromisos" style="width:470px;">
+    <div id='calendar'></div>
+  </div>
+  <div data-options="region:'west',split:true" title="Menu del profesor" style="width:130px;">
+    <button id="create-user"><img border=0 src="/assets/add-tesis.png">Agregar nueva tesis</button>
+    <button id="create-acta"  ><img border=0 src="/assets/add-tesis.png">Crear acta de reunion</button>
+    <button id="create-compromiso"  ><img border=0 src="/assets/add-tesis.png">Crear compromiso</button>
+  </div>
+  <div data-options="region:'center',title:'Mis tesis',iconCls:'icon-ok'">
+
+    <div id="users-contain" class="ui-widget">
+
+      <table id="users" class="ui-widget ui-widget-content">
+        <thead>
+        <tr class="ui-widget-header ">
+          <th>Nombre</th>
+          <th>Descripcion</th>
+          <th>Ir a tesis</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @tesis= Tesi.find_all_by_PROFESOR_ID(session[:user_id]) %>
+        <% @tesis.each do |tesi| -%>
+            <tr>
+              <td><%= tesi.NOMBRE %></td>
+              <td><%= tesi.DESCRIPCION %></td>
+              <td><%= link_to "Ver tesis", :controller => "tesis", :action => "show", :id => tesi.id %></td>
+            </tr>
+        <% end -%>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
 </div>
-<button id="create-user"><img border=0 src="/assets/add-tesis.png">Agregar nueva tesis</button>
+
+</div>
