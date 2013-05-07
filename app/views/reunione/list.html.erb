@@ -8,6 +8,7 @@
           <th>Fecha</th>
           <th>Resumen</th>
           <th>Conclusiones</th>
+          <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
@@ -24,6 +25,10 @@
               <td>
                 <%= reunion1.CONCLUSIONES %>
               </td>
+              <td>
+                <%= link_to "Editar reunión", :controller => "reunione", :action => "edit", :id => reunion1.id %>
+              </td>
+
             </tr>
 
         <% end -%>

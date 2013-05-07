@@ -1,0 +1,24 @@
+<div class = "container">
+  <br><br><br><br>
+  <div class="hero-unit">
+    <%= form_tag( {:action => 'create'}, :multipart => 'true') do  %>
+
+        <div>
+          <%= label_tag 'Nombre', nil, :for => :nombre %>
+          <div>
+            <%= text_field_tag :nombre %>
+          </div>
+        </div>
+        <br>
+        <div>
+          <%= label_tag 'Descripción:', nil, :for => :desc %>
+          <div>
+            <%= text_area_tag :desc %>
+          </div>
+        </div>
+        <br>
+        <%= submit_tag 'Agregar', :class => 'btn btn-large btn-success'%>
+
+    <% end %>
+  </div>
+</div>

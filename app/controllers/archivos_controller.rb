@@ -4,7 +4,7 @@ class ArchivosController < ApplicationController
     @arch = Archivo.new
 
     @arch.NOMBRE = params[:name]
-    @arch.ID_TESIS = params[:thesis_id]
+    @arch.ID_TESIS = 1     #FALTA DEFINIR!!!!!!!!!!!!!!!!
     @arch.FECHA_SUBIDA = Date.today
 
     uploaded_io = params[:dataFile]
@@ -17,11 +17,15 @@ class ArchivosController < ApplicationController
     @arch.PATH = realPath
     @arch.save
 
-    #redirect_to @source
+    redirect_to '/archivos/confirmacion'
   end
 
   def new
     @arch = Archivo.new
+  end
+
+  def confirmacion
+
   end
 
 end

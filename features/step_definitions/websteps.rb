@@ -18,6 +18,10 @@ When /^I click "([^\"]*)"$/ do |link|
   click_link(link)
 end
 
+When /^I click the first "([^\"]*)"$/ do |link|
+    first(:link,link).click
+end
+
 When /^I fill in "([^\"]*)" with "([^\"]*)"$/ do |field, value|
   fill_in(field.gsub(' ', '_'), :with => value)
 end
@@ -102,3 +106,10 @@ Then /^page should have (.+) message "([^\"]*)"$/ do |type, text|
   page.has_css?("p.#{type}", :text => text, :visible => true)
 end
 
+And /^I attatch the file "([^\"]*)" into "([^\"]*)"$/ do |file, field|
+  attach_file(field, file)
+end
+
+And /^my current URL should be "([^\"]*)"$/ do |url|
+  current_path == url
+end

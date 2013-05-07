@@ -1,0 +1,34 @@
+<style type="text/css">
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .sidebar-nav {
+        padding: 9px 0;
+    }
+
+    @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+            float: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+</style>
+<div class="container">
+  <h1>Asignar Temas</h1>
+  <br><br>
+  <div class="hero-unit">
+    <%= form_tag( { :action => 'added'}, :multipart => 'true') do %>
+
+        <%= label_tag 'Fuente'%>
+        <%= select_tag('id',options_from_collection_for_select(FuenteBibliografica.all, 'id','AUTOR'), :for=>:id)%>
+        <%= label_tag 'Tema' %>
+        <%= select_tag('temas_id',options_from_collection_for_select(Tema.all, 'id','NOMBRE'), :for=>:temas_id)%>
+
+        <br/>
+        <%= submit_tag  "Asignar Tema" %>
+        </div>
+    <% end %>
+    </div>

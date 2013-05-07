@@ -2,94 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec78732-5556-43f7-ae34-4c4470534875" name="Default" comment="Poblada de tablas con lo relacionado con mi punto, sirviendo&#10;Falta pulir un poco más lo de la interfaz, pero por ahora está bien">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/cut.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/edit_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/edit_remove.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/filesave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/mini_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/mini_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/mini_refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/no.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/ok.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/print.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/redo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/reload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/sum.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/tip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icons/undo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/accordion_arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/calendar_arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/combo_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/datagrid_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/datebox_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/layout_arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/linkbutton_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/menu_arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/messager_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/pagination_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/panel_tools.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/searchbox_button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/slider_handle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/spinner_arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/tabs_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/tree_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/validatebox_arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/images/validatebox_warning.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/compromisos/eventos.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/easyloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fullcalendar/fullcalendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fullcalendar/fullcalendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fullcalendar/fullcalendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fullcalendar/fullcalendar.print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery-1.8.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery.easyui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui-1.10.2.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/accordion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/calendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/combo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/combobox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/datagrid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/datebox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/easyui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/icon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/layout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/linkbutton.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/menubutton.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/messager.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/pagination.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/panel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/progressbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/propertygrid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/searchbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/spinner.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/splitbutton.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/tabs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/tree.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/validatebox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/themes/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/anotacion.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/anotacion.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/tag.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/anotacions_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/tag_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/anotacions_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/anotacion.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tag.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tag_puente.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/anotacions/list.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/anotacions/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/anotacions/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/archivos/confirmacion.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/compromisos/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/add.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/added.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/get_all.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reunione/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/archivos.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/asignar.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/buscar.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/compromisos.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/conf.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/confirma.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/create.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/fuentes.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/parcial.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/reuniones.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/temas.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130402011142_create_anotacions.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/agregar_tag_a.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/asignar_tema.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/consultarTags.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/editar_reunion.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/obtener_fuentes.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/registrar_avance_compromisos.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/subirArchivo.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/anotacions.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/anotacions_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/anotacion_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/anotacions_helper_test.rb" />
       <change type="DELETED" beforePath="C:\Users\Kevin\Documents\GitHub\TesisLab\db\migrate\20130329152951_add_sessions_table.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/archivos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/archivos_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/compromisos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/compromisos_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reunione_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reunione_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/temas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/temas_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tesis_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tesis_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/archivo.rb" afterPath="$PROJECT_DIR$/app/models/archivo.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/compromiso.rb" afterPath="$PROJECT_DIR$/app/models/compromiso.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/entregable.rb" afterPath="$PROJECT_DIR$/app/models/entregable.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/fuente_bibliografica.rb" afterPath="$PROJECT_DIR$/app/models/fuente_bibliografica.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/archivos/create.html.erb" afterPath="$PROJECT_DIR$/app/views/archivos/create.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/archivos/new.html.erb" afterPath="$PROJECT_DIR$/app/views/archivos/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/compromisos/list.html.erb" afterPath="$PROJECT_DIR$/app/views/compromisos/list.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fuente_bibliograficas/new.html.erb" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profesores/index.html.erb" afterPath="$PROJECT_DIR$/app/views/profesores/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reunione/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reunione/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reunione/list.html.erb" afterPath="$PROJECT_DIR$/app/views/reunione/list.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reunione/new.html.erb" afterPath="$PROJECT_DIR$/app/views/reunione/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" afterPath="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/websteps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/websteps.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/paths.rb" afterPath="$PROJECT_DIR$/features/support/paths.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/populate.rake" afterPath="$PROJECT_DIR$/lib/tasks/populate.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/performance/browsing_test.rb" afterPath="$PROJECT_DIR$/test/performance/browsing_test.rb" />
     </list>
     <ignored path="TesisLab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -146,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compromisos_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="compromisos_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/compromisos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="38" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.5623188">
+            <state line="49" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,14 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/reunione/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="14" selection-end="14" vertical-scroll-proportion="-1.3076923">
-              <folding>
-                <marker date="1367891805864" expanded="true" signature="37:195" placeholder="..." />
-                <marker date="1367891805864" expanded="true" signature="111:188" placeholder="..." />
-              </folding>
+            <state line="41" column="6" selection-start="691" selection-end="691" vertical-scroll-proportion="0.8704819">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,7 +177,7 @@
       <file leaf-file-name="compromiso.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/compromiso.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+            <state line="3" column="6" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -230,7 +210,6 @@
         <option value="$PROJECT_DIR$/app/views/tesis/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/entregable/list.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/reunione/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reunione/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/event.rb" />
         <option value="$PROJECT_DIR$/app/views/compromisos/eventos.html.erb" />
@@ -238,6 +217,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20130507021108_create_events.rb" />
         <option value="$PROJECT_DIR$/app/views/profesores/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/compromisos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/reunione/new.html.erb" />
       </list>
     </option>
   </component>
@@ -1040,14 +1020,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268921" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4161184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272727" sideWeight="0.6628289" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272727" sideWeight="0.6628289" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1206,14 +1186,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/compromiso.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reunione/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="14" selection-end="14" vertical-scroll-proportion="-1.3076923">
+        <state line="3" column="6" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1227,7 +1200,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/compromisos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="38" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.5623188">
+        <state line="49" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reunione/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="6" selection-start="691" selection-end="691" vertical-scroll-proportion="0.8704819">
           <folding />
         </state>
       </provider>

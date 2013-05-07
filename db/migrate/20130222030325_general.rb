@@ -49,6 +49,8 @@ class General < ActiveRecord::Migration
       t.string :RESUMEN
       t.date :FECHA_BIBLIOGRAFIA
       t.date :FECHA_LECTURA
+      t.string :UBICACION, :null => false
+      t.string :EDITORIAL, :null => false
       t.integer :TESIS_ID, :null => false
       t.integer :ESTUDIANTES_ID, :null => false
       t.integer :TEMAS_ID, :null => true
@@ -116,6 +118,7 @@ class General < ActiveRecord::Migration
 
       t.timestamps
     end
+
     #-------------
     # TEMAS
     #-------------
@@ -125,7 +128,30 @@ class General < ActiveRecord::Migration
       t.timestamps
     end
 
+    #-------------
+    # TAGS
+    #-------------
+    create_table :tags do |t|
+      t.string :NOMBRE
+      t.string :DESCRIPCION
+
+      t.timestamps
+    end
+
+    #-------------
+    # PUENTE TAGS
+    #-------------
+    create_table :tag_puentes do |t|
+      t.integer :ID_TAG
+      t.integer :ID_TEMA
+      t.integer :ID_ARCHIVO
+      t.integer :ID_REUNION
+      t.integer :ID_FUENTE
+      t.integer :ID_COMPROMISO
+    end
+
     #Se crean las foreign keys respectivas
+
     execute <<-SQL
       ALTER TABLE tesis
         ADD CONSTRAINT fk_tesis_profesor_id

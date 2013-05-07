@@ -19,6 +19,7 @@
 
 
 
+
 <div class="container">
 
   <div class="row">
@@ -37,10 +38,13 @@
           <p><i>URL: </i><%=post.URL %></p>
           <p><i>Fecha Consulta: </i><%= post.FECHA_LECTURA %></p>
           <p><i>Resumen: </i><%= post.RESUMEN %></p>
+          <p><i>Editorial: </i><%= post.EDITORIAL %></p>
+          <p><i>Ciudad: </i><%= post.UBICACION %></p>
 
-
+          <p><%= link_to "Ver Anotaciones", :controller => "anotacions", :action => "show", :fuenteid => post.id %>  <%= link_to "Nueva Anotacion", :controller => "anotacions", :action => "new" %></p>
           </p>
         </div>
     <% end %>
   </div>
+  <%= link_to "Obtener Bibliografía", :controller => "fuente_bibliograficas", :action => 'get_all' %>
 </div>

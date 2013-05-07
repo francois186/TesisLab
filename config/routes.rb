@@ -9,29 +9,69 @@ TesisLab::Application.routes.draw do
     resources :tesis
   end
 
-  resources :archivos
-  resources :temas, :only => [ :new, :create]
+
+  resources :anotacions, :only => [:create, :new]
+  #resources :anotacions, :except => [:new] do
+  #  collection do
+  #    get 'new/:fuenteid', :to => "anotacions#new", :as => 'new'
+  #  end
+  #end
+
+  resources :archivos, :only => [:new, :create]
+  match '/archivos/confirmacion' => 'archivos#confirmacion'
+
+  resources :temas, :only => [:new, :create]
+
 
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
+  match '/fuente_bibliograficas/get_all' =>'fuente_bibliograficas#get_all'
+  match '/bibliografia'=>'fuente_bibliograficas#bibliografia'
   match '/temas/confirm'=>'temas#confirm'
   match '/compromisos/list' => 'compromisos#list'
-  match '/compromisos/:CODIGO/list' => 'compromisos#compromiso_estudiante'
+  match '/compromisos/:ID/list' => 'compromisos#compromiso_estudiante'
   match '/compromisos/creado' => 'compromisos#create'
+<<<<<<< HEAD
   match '/compromisos/eventos' => 'compromisos#eventos'
+=======
+  match '/compromisos/:id/edit' => 'compromisos#edit'
+  match '/compromisos/:id/update' => 'compromisos#update'
+
+
+  resources :tag, :only => [:new, :create]
+  match '/tag/buscar' => 'tag#buscar'
+  match '/tag/fuentes' => 'tag#fuentes', :as => 'fuentes'
+  match '/tag/entregables' => 'tag#archivos', :as => 'archivos'
+  match '/tag/reuniones' => 'tag#reuniones', :as => 'reuniones'
+  match '/tag/temas' => 'tag#temas', :as => 'temas'
+  match '/tag/compromisos' => 'tag#compromisos', :as => 'compromisos'
+  match '/tag/confirma' => 'tag#confirma'
+  match '/tag/asignar' => 'tag#asignar'
+  match '/tag/parcial' => 'tag#parcial'
+  match '/tag/conf' => 'tag#conf'
+>>>>>>> dcf3aeaca8afd02e6b04a4b7ef7ec0313dc89bc6
 
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'
 
   match '/reuniones/list' => 'reunione#list'
+  match '/reuniones/:id/edit' => 'reunione#edit'
+  match '/reuniones/:id/update' => 'reunione#update'
+  match '/anotacions/list' => 'anotacions#list'
+  match '/anotacions/:fuenteid' => 'anotacions#show'
+  #match '/anotacions/:fuenteid/new' => 'anotacions#new' , :as => 'new_anotacion'
+
   match '/reuniones/new' => 'reunione#new'
   match '/reuniones' => 'reunione#create'
+
   match '/login' => 'login#index'
   match '/login/login' => 'login#login'
   match '/login/create' => 'login#creartesis'
   match '/profesores' => 'profesores#index'
   match '/tesis/create' => 'tesis#creartesis'
   match '/tesis/:id' => 'tesis#show'
+  match '/temas/add' => 'fuente_bibliograficas#add'
+  match '/temas/assigned' => 'fuente_bibliograficas#added'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,26 +1,24 @@
-<%= form_tag( {:action => 'index'}, :multipart => 'true') do  %>
+<div class = "container">
+  <br><br><br><br>
+  <div class="hero-unit">
+    <%= form_tag( {:action => 'create'}, :multipart => 'true') do  %>
 
     <div>
-      <%= label_tag :name, nil, :for => :name %>
+      <%= label_tag 'Nombre', nil, :for => :name %>
       <div>
         <%= text_field_tag :name %>
       </div>
     </div>
-
+    <br>
     <div>
-      <%= label_tag :path, nil,:for => :path %>
+      <%= label_tag 'Seleccione el archivo', nil, :for => :path %>
       <div>
         <%= file_field_tag 'dataFile' %>
       </div>
     </div>
-
-    <div>
-      <%= label_tag :thesis_id, nil, :for => :thesis_id %>
-      <div>
-        <%= text_field_tag :thesis_id %>
-      </div>
-    </div>
     <br>
-    <%= submit_tag 'Create'%>
+    <%= submit_tag 'Subir Archivo', :class => 'btn btn-large btn-success'%>
 
 <% end %>
+  </div>
+</div>

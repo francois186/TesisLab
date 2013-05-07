@@ -8,9 +8,9 @@ class TemasController < ApplicationController
 
   end
 
-  def collect
-     @tema= Tema.select
-  end
+   #def collect
+  #   @tema= Tema.select
+  #end
 
   def create
     @tema = Tema.new(params[:tema])
@@ -20,5 +20,7 @@ class TemasController < ApplicationController
         render 'new'
       end
   end
+
+
 
 end

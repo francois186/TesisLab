@@ -1,0 +1,17 @@
+<div class = "container">
+  <br><br><br><br>
+  <div class="hero-unit">
+    <%= form_tag 'reuniones' do %>
+
+        <div>
+          <%= label_tag 'Ingrese el Tag a buscar' %>
+          <div>
+            <%= text_field_tag :tag %>
+          </div>
+        </div>
+        <br>
+        <%= submit_tag 'Buscar', :class => 'btn btn-large btn-success'%>
+
+    <% end %>
+  </div>
+</div>

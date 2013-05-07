@@ -1,0 +1,52 @@
+<body>
+<br><br><br><br>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          <li class="nav-header">Tags</li>
+          <li><%= link_to 'Reuniones', '/tag/reuniones' %></li>
+          <li><%= link_to 'Entregables', '/tag/entregables' %></li>
+          <li><%= link_to 'Compromisos', '/tag/compromisos' %></li>
+          <li><%= link_to 'Temas', '/tag/temas' %></li>
+          <li class="active"><a>Fuentes</a></li>
+        </ul>
+      </div><!--/.well -->
+    </div><!--/span-->
+
+
+    <div class="span9">
+      <h2>Fuentes</h2>
+      <br>
+      <% @i = 0 %>
+      <% @resultado.each do |r| %>
+
+          <% if ((@i%4) == 0) %>
+              <div class="row-fluid">
+          <% end %>
+
+          <div class="span3">
+            <div class="meLoImagino">
+                  <p>Autor: <%= r.AUTOR %></p>
+                  <p>Resumen: <%= r.RESUMEN %></p>
+            </div>
+          </div>
+
+          <% if (((@i%4) == 0) && (@i > 0)) %>
+              </div>
+          <% end %>
+
+          <% @i = @i+1 %>
+      <% end %>
+      <% if (@i < 4) %>
+          </div>
+      <% end %>
+      </div>
+
+
+</div>
+</div>
+</div>
+<hr>
+</body>

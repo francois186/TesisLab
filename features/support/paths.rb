@@ -13,6 +13,9 @@ module NavigationHelpers
       when /^the home\s?page$/
         '/'
 
+      when /bibliografia/
+        '/bibliografia'
+
       when /registrar_fuente/
         '/fuente_bibliograficas/new'
 
@@ -31,6 +34,10 @@ module NavigationHelpers
       when /revisar_compromisos/
         '/compromisos/list'
 
+      when /registrar_avance/
+        '/compromisos/2/edit'
+
+
       when /revisar_compromisos_estudiante/
         '/compromisos/2345/list'
 
@@ -45,6 +52,12 @@ module NavigationHelpers
 
       when /reuniones/
         '/reuniones'
+
+      when /archivos/
+        '/archivos/new'
+
+      when /archivosListo/
+        '/archivos/new'
 
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:

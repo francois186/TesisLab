@@ -1,5 +1,5 @@
 class Compromiso < ActiveRecord::Base
-  attr_accessible :FECHA_CIERRE, :FECHA_COMPROMETIDA, :FECHA_CREACION, :id, :ROL, :TESIS_ID, :TITULO, :CONTENIDO
+  attr_accessible :FECHA_CIERRE, :FECHA_COMPROMETIDA, :FECHA_CREACION, :id, :ROL, :TESIS_ID, :TITULO, :CONTENIDO , :AVANCE, :OBSERVACIONES_AVANCE, :id
 
   def compromisos_con_estudiantes
     Compromiso.select('estudiantes.PRIMER_NOMBRE, estudiantes.PRIMER_APELLIDO, compromisos.*')
@@ -14,7 +14,7 @@ class Compromiso < ActiveRecord::Base
     .joins('join tesis on compromisos.TESIS_ID = tesis.id
             join tesis_estudiantes on tesis.id = tesis_estudiantes.TESIS_ID
             join estudiantes on tesis_estudiantes.ESTUDIANTE_ID = estudiantes.id')
-    .where('estudiantes.CODIGO = ?', codigo)
+    .where('estudiantes.ID = ?', codigo)
   end
 
 end
