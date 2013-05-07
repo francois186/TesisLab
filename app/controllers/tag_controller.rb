@@ -44,7 +44,6 @@ class TagController < ApplicationController
   end
 
   def conf
-
     if params[:eltipo] == 'Temas'
       Tag.new.asignar_tag_tema(params[:c], params[:eltag])
     elsif params[:eltipo] == 'Reuniones'

@@ -1,8 +1,6 @@
 class Tag < ActiveRecord::Base
   attr_accessible :NOMBRE, :DESCRIPCION, :id
-
   @id
-
   def crear_tag(desc, nomb)
     @tag = Tag.new
     @tag.NOMBRE = nomb

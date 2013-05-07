@@ -5,7 +5,7 @@
         <% @tags = Tag.new.dar_tags %>
         <p>Seleccione el tag:</p>
         <%= select_tag :tg, options_for_select(@tags.collect{ |u| [u.NOMBRE, (u.NOMBRE || u.AUTOR)] }) %>
-        <p>Seleccione el tipo de objeto al que desea asignarle el tag:</p>
+        <p>Seleccione el tipo de objeto al que desea asignarle el tag: </p>
         <% @ary = %w(Temas Entregables) %>
 
         <%= select_tag :tipo, options_for_select(@ary) %>

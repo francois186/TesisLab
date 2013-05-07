@@ -1,7 +1,7 @@
 <br><br><br><br>
 <div class="container">
   <div class="hero-unit">
-    <h2>Asignar Tag a <%= params[:tipo] %></h2>
+    <h2>Asignar Tag a <%= params[:tipo] %> </h2>
     <%= form_tag ({:action => 'conf', :eltipo => params[:tipo], :eltag => params[:tg]}) do  %>
         <p>Seleccione el objeto al que se le asignará el tag:</p>
         <% @algo = Tag.new.dar_objetos(params[:tipo]) %>
