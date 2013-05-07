@@ -21,7 +21,7 @@
   <br><br>
   <div class="hero-unit">
 <%= form_for @fuente_bibliografica do |t| %>
-    <%= t.label :AUTOR %>
+    <%= t.label :AUTOR, "Apellido y Nombre del Autor" %>
     <%= t.text_field :AUTOR%>
     <br/>
     <%=  t.label :URL%>
@@ -34,6 +34,10 @@
     <%= t.date_select :FECHA_BIBLIOGRAFIA %>
     <%=  t.label :FECHA_LECTURA%>
     <%= t.date_select :FECHA_LECTURA%>
+    <%=  t.label :EDITORIAL%>
+    <%= t.text_field :EDITORIAL %>
+    <%=  t.label :UBICACION, "Ciudad"%>
+    <%= t.text_field :UBICACION %>
     <%= t.label :TEMAS_ID,"Tema" %>
     <%= t.select(:TEMAS_ID, Tema.all.collect {|p| [ p.NOMBRE, p.id ] }, { :include_blank => true })  %>
     <%= t.hidden_field :ESTUDIANTES_ID,  :value => "1"  %>

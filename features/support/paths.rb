@@ -13,6 +13,9 @@ module NavigationHelpers
       when /^the home\s?page$/
         '/'
 
+      when /bibliografia/
+        '/bibliografia'
+
       when /registrar_fuente/
         '/fuente_bibliograficas/new'
 

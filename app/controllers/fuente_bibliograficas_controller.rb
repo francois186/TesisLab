@@ -24,7 +24,15 @@ class FuenteBibliograficasController < ApplicationController
 
     FuenteBibliografica.find(params[:id]).update_attribute('TEMAS_ID',params[:temas_id])
 
+  end
 
+  def get_all
+    @fuentes_bibliograficas=FuenteBibliografica.all
+    @bibliografia= Array.new
+    @fuentes_bibliograficas.each do |f|
+       @bibliografia << (""+(f.AUTOR.split)[0].capitalize+', '+(f.AUTOR.split)[1].capitalize[0,1]+ ". (" +f.FECHA_BIBLIOGRAFIA.year.to_s+"). "+f.LIBRO.capitalize+". "+f.UBICACION.capitalize+": "+f.EDITORIAL.capitalize+'.')
+    end
+    @bibliografia.sort_by!{ |m| m }
   end
 
   def assigned
