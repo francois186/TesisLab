@@ -81,25 +81,34 @@ class Tag < ActiveRecord::Base
   end
 
   def asignar_tag_fuente(id, nombre_tag)
-    @t = Tag.select('*').where('NOMBRE = ?', nombre_tag)
+    x = Tag.select('tags.id').where('NOMBRE = ?', nombre_tag)
+    x.each do |i|
+      @t = i.id
+    end
     @tp = TagPuente.new
-    @tp.ID_TAG = @t.id
+    @tp.ID_TAG = @t
     @tp.ID_FUENTE = id
     @tp.save
   end
 
   def asignar_tag_tema(id, nombre_tag)
-    @t = Tag.select('*').where('NOMBRE = ?', nombre_tag)
+    x = Tag.select('tags.id').where('NOMBRE = ?', nombre_tag)
+    x.each do |i|
+      @t = i.id
+    end
     @tp = TagPuente.new
-    @tp.ID_TAG = @t.id
+    @tp.ID_TAG = @t
     @tp.ID_TEMA = id
     @tp.save
   end
 
   def asignar_tag_reunion(id, nombre_tag)
-    @t = Tag.select('*').where('NOMBRE = ?', nombre_tag)
+    x = Tag.select('tags.id').where('NOMBRE = ?', nombre_tag)
+    x.each do |i|
+      @t = i.id
+    end
     @tp = TagPuente.new
-    @tp.ID_TAG = @t.id
+    @tp.ID_TAG = @t
     @tp.ID_REUNION = id
     if @tp.save
       return true
@@ -109,20 +118,23 @@ class Tag < ActiveRecord::Base
   end
 
   def asignar_tag_archivo(id, nombre_tag)
-    @t = Tag.select('*').where('NOMBRE = ?', nombre_tag)
+    x = Tag.select('tags.id').where('NOMBRE = ?', nombre_tag)
+    x.each do |i|
+      @t = i.id
+    end
     @tp = TagPuente.new
-    @tp.ID_TAG = @t.id
+    @tp.ID_TAG = @t
     @tp.ID_ARCHIVO = id
     @tp.save
   end
 
   def asignar_tag_compromiso(id, nombre_tag)
-    x = Tag.select('id').where('NOMBRE = ?', nombre_tag)
+    x = Tag.select('tags.id').where('NOMBRE = ?', nombre_tag)
     x.each do |i|
-      @id = i.id
+      @t = i.id
     end
     @tp = TagPuente.new
-    @tp.ID_TAG = @id
+    @tp.ID_TAG = @t
     @tp.ID_COMPROMISO = id
     @tp.save
   end

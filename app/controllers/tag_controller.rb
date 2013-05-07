@@ -44,17 +44,17 @@ class TagController < ApplicationController
   end
 
   def conf
-    puts '----------------'+@eltipo.to_s+'------------------'+@eltag.to_s
-    if @eltipo == 'Temas'
-      Tag.new.asignar_tag_tema(params[:c], @eltag)
-    elsif @eltipo == 'Reuniones'
-      Tag.new.asignar_tag_reunion(params[:c], @eltag)
-    elsif @eltipo == 'Fuentes'
-      Tag.new.asignar_tag_fuente(params[:c], @eltag)
-    elsif @eltipo == 'Compromisos'
-      Tag.new.asignar_tag_compromiso(params[:c], @eltag)
+
+    if params[:eltipo] == 'Temas'
+      Tag.new.asignar_tag_tema(params[:c], params[:eltag])
+    elsif params[:eltipo] == 'Reuniones'
+      Tag.new.asignar_tag_reunion(params[:c], params[:eltag])
+    elsif params[:eltipo] == 'Fuentes'
+      Tag.new.asignar_tag_fuente(params[:c], params[:eltag])
+    elsif params[:eltipo] == 'Compromisos'
+      Tag.new.asignar_tag_compromiso(params[:c], params[:eltag])
     else
-      Tag.new.asignar_tag_archivo(params[:c], @eltag)
+      Tag.new.asignar_tag_archivo(params[:c], params[:eltag])
     end
   end
 

@@ -2,9 +2,7 @@
 <div class="container">
   <div class="hero-unit">
     <h2>Asignar Tag a <%= params[:tipo] %></h2>
-    <% @eltipo = params[:tipo] %>
-    <% @eltag = params[:tg] %>
-    <%= form_tag ({:action => 'conf'}) do  %>
+    <%= form_tag ({:action => 'conf', :eltipo => params[:tipo], :eltag => params[:tg]}) do  %>
         <p>Seleccione el objeto al que se le asignará el tag:</p>
         <% @algo = Tag.new.dar_objetos(params[:tipo]) %>
         <% if params[:c] == 'Temas' %>
@@ -15,6 +13,8 @@
             <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.AUTOR, u.id] }) %>
         <% elsif params[:c] == 'Compromisos' %>
             <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.TITULO, u.id] }) %>
+        <% elsif params[:c] == 'Fuentes' %>
+            <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.AUTOR, u.id] }) %>
         <% else %>
             <%= select_tag :c, options_for_select(@algo.collect{ |u| [u.NOMBRE, u.id] }) %>
         <% end %>
