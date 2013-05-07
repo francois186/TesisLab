@@ -3,6 +3,7 @@
     <div class="hero-unit">
       <%= form_tag ({:action => 'parcial'}) do  %>
         <% @tags = Tag.new.dar_tags %>
+        <h2>Asignar Tag</h2><br>
         <p>Seleccione el tag:</p>
         <%= select_tag :tg, options_for_select(@tags.collect{ |u| [u.NOMBRE, (u.NOMBRE || u.AUTOR)] }) %>
         <p>Seleccione el tipo de objeto al que desea asignarle el tag: </p>
