@@ -51,6 +51,8 @@ class FuenteBibliograficasController < ApplicationController
   #def collect_temas
   #  @temas=Tema.select();
   #end
+  def index
 
+  end
 
 end

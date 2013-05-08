@@ -19,13 +19,15 @@ TesisLab::Application.routes.draw do
 
   resources :archivos, :only => [:new, :create]
   match '/archivos/confirmacion' => 'archivos#confirmacion'
+  match '/archivos' => 'archivos#index'
 
   resources :temas, :only => [:new, :create]
-
+  match '/fuente_bibliograficas' => 'fuente_bibliograficas#index'
 
   match '/fuente_bibliograficas/list' => 'fuente_bibliograficas#list'
   match '/fuente_bibliograficas/creado' => 'fuente_bibliograficas#create'
   match '/fuente_bibliograficas/get_all' =>'fuente_bibliograficas#get_all'
+
   match '/bibliografia'=>'fuente_bibliograficas#bibliografia'
   match '/temas/confirm'=>'temas#confirm'
   match '/compromisos/list' => 'compromisos#list'
@@ -36,9 +38,11 @@ TesisLab::Application.routes.draw do
 
   match '/compromisos/:id/edit' => 'compromisos#edit'
   match '/compromisos/:id/update' => 'compromisos#update'
+  match '/compromisos'=>'compromisos#index'
 
 
   resources :tag, :only => [:new, :create]
+  match '/tag'=>'tag#index'
   match '/tag/buscar' => 'tag#buscar'
   match '/tag/fuentes' => 'tag#fuentes', :as => 'fuentes'
   match '/tag/entregables' => 'tag#archivos', :as => 'archivos'
@@ -53,7 +57,7 @@ TesisLab::Application.routes.draw do
 
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'
-
+  match '/reuniones' => 'reunione#index'
   match '/reuniones/list' => 'reunione#list'
   match '/reuniones/:id/edit' => 'reunione#edit'
   match '/reuniones/:id/update' => 'reunione#update'
@@ -72,6 +76,8 @@ TesisLab::Application.routes.draw do
   match '/tesis/:id' => 'tesis#show'
   match '/temas/add' => 'fuente_bibliograficas#add'
   match '/temas/assigned' => 'fuente_bibliograficas#added'
+
+  match '/index_estudiantes' => 'login#bienvenidae'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
