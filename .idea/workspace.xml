@@ -2,77 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec78732-5556-43f7-ae34-4c4470534875" name="Default" comment="Poblada de tablas con lo relacionado con mi punto, sirviendo&#10;Falta pulir un poco más lo de la interfaz, pero por ahora está bien">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/anotacion.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/anotacion.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/tag.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/anotacions_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/tag_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/anotacions_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/anotacion.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tag.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tag_puente.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/anotacions/list.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/anotacions/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/anotacions/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/archivos/confirmacion.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/compromisos/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/add.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/added.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/get_all.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reunione/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/archivos.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/asignar.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/buscar.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/compromisos.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/conf.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/confirma.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/create.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/fuentes.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/parcial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/reuniones.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tag/temas.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130402011142_create_anotacions.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/agregar_tag_a.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/asignar_tema.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/consultarTags.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/editar_reunion.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/obtener_fuentes.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/registrar_avance_compromisos.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/subirArchivo.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/anotacions.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/anotacions_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/anotacion_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/anotacions_helper_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/home.png" />
       <change type="DELETED" beforePath="C:\Users\Kevin\Documents\GitHub\TesisLab\db\migrate\20130329152951_add_sessions_table.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/archivos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/archivos_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/compromisos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/compromisos_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/fuente_bibliograficas_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reunione_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reunione_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/temas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/temas_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tesis_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tesis_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/archivo.rb" afterPath="$PROJECT_DIR$/app/models/archivo.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/compromiso.rb" afterPath="$PROJECT_DIR$/app/models/compromiso.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/entregable.rb" afterPath="$PROJECT_DIR$/app/models/entregable.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/fuente_bibliografica.rb" afterPath="$PROJECT_DIR$/app/models/fuente_bibliografica.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/archivos/create.html.erb" afterPath="$PROJECT_DIR$/app/views/archivos/create.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/archivos/new.html.erb" afterPath="$PROJECT_DIR$/app/views/archivos/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/compromisos/list.html.erb" afterPath="$PROJECT_DIR$/app/views/compromisos/list.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/list.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/fuente_bibliograficas/new.html.erb" afterPath="$PROJECT_DIR$/app/views/fuente_bibliograficas/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/estudiantes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/estudiantes/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reunione/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/reunione/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reunione/list.html.erb" afterPath="$PROJECT_DIR$/app/views/reunione/list.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reunione/new.html.erb" afterPath="$PROJECT_DIR$/app/views/reunione/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profesores/index.html.erb" afterPath="$PROJECT_DIR$/app/views/profesores/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" afterPath="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/websteps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/websteps.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/paths.rb" afterPath="$PROJECT_DIR$/features/support/paths.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/populate.rake" afterPath="$PROJECT_DIR$/lib/tasks/populate.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/performance/browsing_test.rb" afterPath="$PROJECT_DIR$/test/performance/browsing_test.rb" />
     </list>
     <ignored path="TesisLab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,10 +48,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/compromisos/new.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/estudiantes/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="26" selection-start="375" selection-end="470" vertical-scroll-proportion="0.1923077">
+            <state line="121" column="92" selection-start="4000" selection-end="4000" vertical-scroll-proportion="-11.730769">
               <folding />
             </state>
           </provider>
@@ -123,61 +60,43 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profesores/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="27" selection-start="5093" selection-end="5093" vertical-scroll-proportion="-5.230769">
+            <state line="193" column="8" selection-start="7175" selection-end="7177" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compromisos_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/compromisos_controller.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+            <state line="51" column="0" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130222030325_general.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130222030325_general.rb">
+      <file leaf-file-name="login_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="10" column="6" selection-start="268" selection-end="285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/reunione/new.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="6" selection-start="691" selection-end="691" vertical-scroll-proportion="0.8704819">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.6923077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130507021108_create_events.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130507021108_create_events.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="15" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/event.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="35" selection-end="50" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compromiso.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/compromiso.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+            <state line="30" column="37" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.34638554">
               <folding />
             </state>
           </provider>
@@ -202,22 +121,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tesis_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" />
         <option value="$PROJECT_DIR$/app/views/tesis/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/entregable/list.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reunione/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/event.rb" />
         <option value="$PROJECT_DIR$/app/views/compromisos/eventos.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130507021108_create_events.rb" />
-        <option value="$PROJECT_DIR$/app/views/profesores/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/compromisos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/reunione/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130222030325_general.rb" />
+        <option value="$PROJECT_DIR$/app/views/profesores/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/estudiantes/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -307,57 +226,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fullcalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,28 +261,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -433,7 +280,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reunione" />
+              <option name="myItemId" value="profesores" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,7 +302,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="estudiantes" />
+              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,64 +317,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compromisos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TesisLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,11 +342,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\app\assets\images" />
       <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\public\jquery" />
       <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\public\fullcalendar" />
       <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\public" />
       <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\public\themes" />
-      <recent name="C:\Users\Kevin\Documents\GitHub\TesisLab\app\assets\javascripts" />
     </key>
   </component>
   <component name="RunManager" selected="Rake.db:migrate">
@@ -962,7 +751,7 @@
         <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate" />
-        <item index="4" class="java.lang.String" itemvalue="Rake.db:sessions:create" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
       </list>
     </recent_temporary>
   </component>
@@ -1100,62 +889,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/estudiante.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/compromisos/eventos.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="54" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130507021108_create_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="35" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tesis/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.8871474">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/entregable_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/estudiantes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5873494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/estudiantes/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1166,20 +899,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/reunione/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="69" selection-start="869" selection-end="869" vertical-scroll-proportion="1.4849398">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profesores/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="27" selection-start="5093" selection-end="5093" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130222030325_general.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1198,16 +917,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/compromisos_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/reunione/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+        <state line="36" column="54" selection-start="666" selection-end="666" vertical-scroll-proportion="0.61445785">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reunione/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/compromisos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="6" selection-start="691" selection-end="691" vertical-scroll-proportion="0.8704819">
+        <state line="49" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.15342465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130402011142_create_anotacions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130222030325_general.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="55" selection-end="2908" vertical-scroll-proportion="0.044973545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/entregable/list.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tesis/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="115" selection-start="1263" selection-end="1284" vertical-scroll-proportion="-3.6637168">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profesores/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="8" selection-start="7175" selection-end="7177" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.6923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/estudiantes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="92" selection-start="4000" selection-end="4000" vertical-scroll-proportion="-11.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="268" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="37" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.34638554">
           <folding />
         </state>
       </provider>

@@ -1,34 +1,139 @@
-<h1>Lista de estudiantes</h1>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<link href='/fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='/fullcalendar/fullcalendar.min.js'></script>
 
-<table id="table-2">
-  <thread>
-  <tr>
-    <th>Primer nombre</th>
-    <th>Segundo nombre</th>
-    <th>Primer apellido</th>
-    <th>Segundo apellido</th>
-    <th>Codigo</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  </thread>
-  <tbody>
-<% @estudiantes.each do |estudiante| %>
-  <tr>
-    <td><%= estudiante.PRIMER_NOMBRE %></td>
-    <td><%= estudiante.SEGUNDO_NOMBRE %></td>
-    <td><%= estudiante.PRIMER_APELLIDO %></td>
-    <td><%= estudiante.SEGUNDO_APELLIDO %></td>
-    <td><%= estudiante.CODIGO %></td>
-    <td><%= link_to 'Mostrar', estudiante %></td>
-    <td><%= link_to 'Editar', edit_estudiante_path(estudiante) %></td>
-    <td><%= link_to 'Eliminar', estudiante, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</tbody>
-</table>
+<style>
+    body { font-size: 62.5%; }
+    label, input { display:block; }
+    input.text { margin-bottom:12px; width:95%; padding: .4em; }
+    fieldset { padding:0; border:0; margin-top:25px; }
+    h1 { font-size: 1.2em; margin: .6em 0; }
+    div#users-contain { width: 350px; margin: 20px 0; }
+    div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+    div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+    .ui-dialog .ui-state-error { padding: .3em; }
+    .validateTips { border: 1px solid transparent; padding: 0.3em; }
+</style>
+<script>
+    $(function() {
+        var nombre = $( "#nombre" ),
+                descripcion = $( "#descripcion" ),
+                allFields = $( [] ).add( nombre ).add( descripcion ),
+                tips = $( ".validateTips" );
 
-<br />
+        function updateTips( t ) {
+            tips
+                    .text( t )
+                    .addClass( "ui-state-highlight" );
+            setTimeout(function() {
+                tips.removeClass( "ui-state-highlight", 1500 );
+            }, 500 );
+        }
 
-<%= link_to 'Nuevo', new_estudiante_path %>
+        function checkLength( o, n, min, max ) {
+            if ( o.val().length > max || o.val().length < min ) {
+                o.addClass( "ui-state-error" );
+                updateTips( "Length of " + n + " must be between " +
+                        min + " and " + max + "." );
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function checkRegexp( o, regexp, n ) {
+            if ( !( regexp.test( o.val() ) ) ) {
+                o.addClass( "ui-state-error" );
+                updateTips( n );
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+
+        $( "#create-acta" )
+                .button()
+                .click(function() {
+                    window.location.href = "/reuniones/new";
+                });
+
+        $( "#create-compromiso" )
+                .button()
+                .click(function() {
+                    window.location.href = "/compromisos/new";
+                });
+        $( "#create-tema" )
+                .button()
+                .click(function() {
+                    window.location.href = "/temas/new";
+                });
+        $( "#create-fuente" )
+                .button()
+                .click(function() {
+                    window.location.href = "/fuente_bibliograficas/new";
+                });
+    });
+</script>
+<script>
+
+    $(document).ready(function() {
+
+        $('#calendar').fullCalendar({
+
+            editable: false,
+
+            events: "/compromisos/eventos.json",
+
+            eventDrop: function(event, delta) {
+                // alert(event.title + ' was moved ' + delta + ' days\n' +
+                //         '(should probably update your database)');
+            },
+
+            loading: function(bool) {
+                if (bool) $('#loading').show();
+                else $('#loading').hide();
+            }
+
+        });
+
+
+    });
+
+</script>
+
+</head>
+<div class="container">
+
+
+
+
+  <div class="easyui-layout" style="width:1000px;height:600px;">
+    <div data-options="region:'north'" style="height:50px">
+
+    </div>
+    <div data-options="region:'south',split:true" style="height:50px;"></div>
+    <div data-options="region:'east',split:true" title="Compromisos" style="width:470px;">
+      <div id='calendar'></div>
+    </div>
+    <div data-options="region:'west',split:true" title="Menu del estudiante" style="width:170px;">
+
+      <button id="create-acta"  ><img border=0 src="/assets/add-tesis.png">Crear acta de reunion</button>
+      <button id="create-compromiso"  ><img border=0 src="/assets/add-tesis.png">Crear compromiso</button>
+      <button id="create-tema"  ><img border=0 src="/assets/add-tesis.png">Crear tema</button>
+      <button id="create-fuente"  ><img border=0 src="/assets/add-tesis.png">Crear fuente</button>
+
+
+
+    </div>
+    <div data-options="region:'center',title:'Mi tesis',iconCls:'icon-ok'">
+
+
+
+    </div>
+  </div>
+
+</div>

@@ -31,9 +31,9 @@ TesisLab::Application.routes.draw do
   match '/compromisos/list' => 'compromisos#list'
   match '/compromisos/:ID/list' => 'compromisos#compromiso_estudiante'
   match '/compromisos/creado' => 'compromisos#create'
-<<<<<<< HEAD
+
   match '/compromisos/eventos' => 'compromisos#eventos'
-=======
+
   match '/compromisos/:id/edit' => 'compromisos#edit'
   match '/compromisos/:id/update' => 'compromisos#update'
 
@@ -49,7 +49,7 @@ TesisLab::Application.routes.draw do
   match '/tag/asignar' => 'tag#asignar'
   match '/tag/parcial' => 'tag#parcial'
   match '/tag/conf' => 'tag#conf'
->>>>>>> dcf3aeaca8afd02e6b04a4b7ef7ec0313dc89bc6
+
 
   match '/entregables/list' => 'entregable#list'
   match '/estudiantes' => 'estudiantes#index'
