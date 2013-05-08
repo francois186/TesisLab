@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="#">Tesis Lab</a>
+      <a class="brand" href="/index_estudiantes">Tesis Lab</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
 
@@ -28,7 +28,7 @@
 
 
           <img src="/assets/home.png" alt="HTML tutorial" width="32" height="32">
-           <% if session[:user_id]==2 %>
+           <% if session[:user_id] == 2 %>
 
               <%= link_to 'Home estudiante', "/estudiantes" %>
 
