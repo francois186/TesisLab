@@ -12,6 +12,7 @@ class CompromisosController < ApplicationController
   def new
     @compromiso = Compromiso.new
   end
+
   def create
     @compromiso = Compromiso.new(params[:compromiso])
     if @compromiso.save
