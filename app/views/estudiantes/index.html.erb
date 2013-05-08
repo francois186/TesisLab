@@ -116,21 +116,76 @@
 
     </div>
     <div data-options="region:'south',split:true" style="height:50px;"></div>
-    <div data-options="region:'east',split:true" title="Compromisos" style="width:470px;">
+    <div data-options="region:'east',split:true" title="Compromisos" style="width:580px;">
       <div id='calendar'></div>
     </div>
-    <div data-options="region:'west',split:true" title="Menu del estudiante" style="width:170px;">
+    <div data-options="region:'west',split:true" title="Estudiante" style="width:120px;">
 
-      <button id="create-acta"  ><img border=0 src="/assets/add-tesis.png">Crear acta de reunion</button>
-      <button id="create-compromiso"  ><img border=0 src="/assets/add-tesis.png">Crear compromiso</button>
-      <button id="create-tema"  ><img border=0 src="/assets/add-tesis.png">Crear tema</button>
-      <button id="create-fuente"  ><img border=0 src="/assets/add-tesis.png">Crear fuente</button>
+      <button id="create-acta"  ><img border=0 src="/assets/acta.png">Crear acta de reunion</button>
+      <button id="create-compromiso"  ><img border=0 src="/assets/compromiso.png">Crear compromiso</button>
+      <button id="create-tema"  ><img border=0 src="/assets/tema.png">Crear tema</button>
+      <button id="create-fuente"  ><img border=0 src="/assets/fuente.png">Crear fuente</button>
 
 
 
     </div>
-    <div data-options="region:'center',title:'Mi tesis',iconCls:'icon-ok'">
+    <div data-options="region:'center',title:'Gestion de tesis',iconCls:'icon-ok'">
 
+
+      <div class="easyui-accordion" style="width:300px;height:400px;">
+        <div title="Manejo de fuentes" data-options="iconCls:'icon-search'" style="overflow:auto;padding:10px;">
+
+          <ul class="easyui-tree">
+            <li><h4><%= link_to 'Agregar una Fuente Bibliográfica', '/fuente_bibliograficas/new' %></li>
+            <li><h4><%= link_to 'Ver Fuentes Bibliográficas', '/fuente_bibliograficas/list' %></li>
+            <li><h4><%= link_to 'Agregar Tema', '/temas/new' %></li>
+            <li><h4><%= link_to 'Asignar Tema', '/temas/add' %></li>
+            <li><h4><%= link_to 'Obtener Bibliografía', '/fuente_bibliograficas/get_all' %></li>
+          </ul>
+
+        </div>
+        <div title="Manejo de compromisos" data-options="iconCls:'icon-search'" style="padding:10px;">
+
+          <ul class="easyui-tree">
+            <li><h4><%= link_to 'Crear Compromiso', '/compromisos/new' %></li>
+            <li><h4><%= link_to 'Ver Compromisos', '/compromisos/list' %></li>
+          </ul>
+         </div>
+        <div title="Manejo de entregables" data-options="iconCls:'icon-search'" style="padding:10px;">
+
+          <ul class="easyui-tree">
+            <li><h4><%= link_to 'Subir Entregables', '/archivos/new' %></li>
+            <li><h4><%= link_to 'Ver entregables', '/entregables/list' %></li>
+          </ul>
+        </div>
+
+        <div title="Manejo de compromisos" data-options="iconCls:'icon-search'" style="padding:10px;">
+
+          <ul class="easyui-tree">
+            <li><h4><%= link_to 'Crear Compromiso', '/compromisos/new' %></li>
+            <li><h4><%= link_to 'Ver Compromisos', '/compromisos/list' %></li>
+          </ul>
+        </div>
+        <div title="Manejo de reuniones" data-options="iconCls:'icon-search'" style="padding:10px;">
+
+          <ul class="easyui-tree">
+            <li><h4><%= link_to 'Manejo de Compromisos', '/fuente_bibliograficas' %></li>
+            <li><h4><%= link_to 'Compromisos', '/tag/compromisos' %></li>
+            <li><h4><%= link_to 'Temas', '/tag/temas' %></li>
+            <li><h4><%= link_to 'Fuentes', '/tag/fuentes' %></li>
+          </ul>
+        </div>
+
+        <div title="Asignacion de tags" data-options="iconCls:'icon-help'" style="padding:10px;">
+
+          <ul class="easyui-tree">
+            <li><h4><%= link_to 'Crear Tag', '/tag/new' %></li>
+            <li><h4><%= link_to 'Asignar Tag', '/tag/asignar' %></li>
+            <li><h4><%= link_to 'Buscar por Tag', '/tag/buscar' %></li>
+          </ul>
+        </div>
+
+      </div>
 
 
     </div>

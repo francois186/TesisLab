@@ -10,7 +10,7 @@ class LoginController < ApplicationController
     if(@estudiante!=nil&&@estudiante.USUARIO==params[:username])
       session[:user_id] = @estudiante.id
       session[:user_rol] = 2
-      redirect_to '/index_estudiantes'
+      redirect_to '/estudiantes'
     elsif(@profesor!=nil&&@profesor.USUARIO==params[:username])
       session[:user_id] = @profesor.id
       session[:user_rol] = 1
