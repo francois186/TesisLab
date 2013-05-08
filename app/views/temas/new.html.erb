@@ -21,7 +21,7 @@
   <br><br>
   <div class="hero-unit">
     <h3>Registro de Nuevo Tema</h3>
-    <%= form_for @tema do |t| %>
+    <%= form_for @tema, :url => { :action => 'create' } do |t| %>
         <%= t.label :NOMBRE %>
         <%= t.text_field :NOMBRE%>
         <%=  t.label :DESCRIPCION%>
